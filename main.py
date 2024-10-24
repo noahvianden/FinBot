@@ -50,7 +50,7 @@ except Exception as e:
 if os.path.exists('reddit_finance_posts.json'):
     print("Die Datei reddit_finance_posts.json existiert bereits und wird überschrieben.")
 
-with codecs.open('reddit_finance_posts.json', 'w', encoding='utf-8') as json_file:
+with codecs.open('JSON/reddit_finance_posts.json', 'w', encoding='utf-8') as json_file:
     json.dump(posts, json_file, ensure_ascii=True, indent=4)
 
 print("Die Reddit-Beiträge wurden erfolgreich gespeichert.")

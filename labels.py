@@ -4,7 +4,7 @@ import json
 app = Flask(__name__)
 
 # Lade den Datensatz
-with open(r'C:\Users\noahv\PycharmProjects\Bachelorarbeit\reddit_finance_posts.json', 'r') as f:
+with open(r'./JSON/reddit_finance_posts.json', 'r') as f:
     data = json.load(f)
 
 current_index = 0
@@ -32,7 +32,7 @@ def label():
             data[current_index]['top_comments'][comment_index]['label'] = label
 
     # Speichere den aktualisierten Datensatz
-    with open(r'C:\Users\noahv\PycharmProjects\Bachelorarbeit\reddit_finance_posts.json', 'w') as f:
+    with open(r'./JSON/reddit_finance_posts.json', 'w') as f:
         json.dump(data, f, indent=4)
 
     # Gehe zum nächsten Datensatz, wenn ein Post gelabelt wurde
