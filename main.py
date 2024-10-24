@@ -10,6 +10,8 @@ reddit = praw.Reddit(client_id='u9wPL-7SY7LwVNTrImjS-w',
 
 # Liste der Finanz-Subreddits
 subreddits = ['wallstreetbets']
+submission_limit = 1
+comment_limit = 10
 
 # Sammeln von Beiträgen
 posts = []
@@ -17,10 +19,10 @@ posts = []
 try:
     for subreddit in subreddits:
         subreddit_obj = reddit.subreddit(subreddit)
-        for submission in subreddit_obj.top(limit=1):
+        for submission in subreddit_obj.top(limit=submission_limit):
             # Sammeln der Top 10 Kommentare mit Text
             submission.comments.replace_more(limit=0)  # Entfernen von MoreComments Objekten
-            top_comments = [comment for comment in submission.comments.list() if isinstance(comment.body, str) and comment.body.lower() not in ['[removed]', '[deleted]']][:10]
+            top_comments = [comment for comment in submission.comments.list() if isinstance(comment.body, str) and comment.body.lower() not in ['[removed]', '[deleted]']][:comment_limit]
             comments_data = [
                 {
                     "body": comment.body,
