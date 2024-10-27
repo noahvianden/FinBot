@@ -3,7 +3,6 @@ import os
 import json
 import codecs
 import logging
-import datetime
 from helper.helper import important_subreddits
 
 ####################################
@@ -36,15 +35,15 @@ def get_comment_data(comment, depth=1):
     return comment_data
 
 # Funktion zum Abrufen von Beiträgen innerhalb eines festen Zeitrahmens
-def get_posts_in_timeframe(subreddit, start_time, end_time, max_submissions, max_comments_layer_1):
+def get_posts_in_timeframe(subreddit, max_submissions, max_comments_layer_1):
     global api_token_count
     posts = []
     try:
         logging.info(f"Methode: get_posts_in_timeframe wurde aufgerufen")
-        logging.info(f"Subreddit: {subreddit}, Zeitrahmen: {start_time} bis {end_time}")
+        logging.info(f"Subreddit: {subreddit}")
         subreddit_obj = reddit.subreddit(subreddit)
         # Suche nach Beiträgen innerhalb des angegebenen Zeitrahmens
-        for submission in subreddit_obj.search(f'timestamp:{int(start_time.timestamp())}..{int(end_time.timestamp())}', syntax='cloudsearch', limit=max_submissions):
+        for submission in subreddit_obj.new(limit=max_submissions):
             api_token_count += 1  # Zähle jeden API-Aufruf
 
             # Sammeln der Top-Kommentare
@@ -74,13 +73,13 @@ def get_posts_in_timeframe(subreddit, start_time, end_time, max_submissions, max
         logging.error(f"Fehler beim Abrufen der Beiträge: {e}")
     return posts, api_token_count
 
-# Funktion zum Abrufen eines einzelnen Beitrags über die URL
-def get_post_by_url(url, max_comments_layer_1):
+# Funktion zum Abrufen eines einzelnen Beitrags über die ID
+def get_post_by_id(post_id, max_comments_layer_1):
     global api_token_count
     try:
-        logging.info(f"Methode: get_post_by_url wurde aufgerufen")
-        logging.info(f"URL: {url}")
-        submission = reddit.submission(url=url)
+        logging.info(f"Methode: get_post_by_id wurde aufgerufen")
+        logging.info(f"Post ID: {post_id}")
+        submission = reddit.submission(id=post_id)
         api_token_count += 1  # Zähle jeden API-Aufruf
 
         # Sammeln der Top-Kommentare
@@ -107,28 +106,26 @@ def get_post_by_url(url, max_comments_layer_1):
         logging.info(f"Anzahl der benötigten Tokens für Post '{submission.title}': {api_token_count}")
         return post_data, api_token_count
     except Exception as e:
-        logging.error(f"Fehler beim Abrufen des Beitrags von URL {url}: {e}")
+        logging.error(f"Fehler beim Abrufen des Beitrags mit ID {post_id}: {e}")
         return None
 
 ####################################
 # ------------ Main ----------------
 ####################################
 
-# Methode zum Abrufen eines Beitrags per URL und Hinzufügen zu den Posts
-def fetch_and_add_post_by_url(url, max_comments_layer_1, all_posts, total_api_calls):
-    logging.info(f"Methode: fetch_and_add_post_by_url wurde aufgerufen")
-    post_data, api_calls = get_post_by_url(url, max_comments_layer_1)
+# Methode zum Abrufen eines Beitrags per ID und Hinzufügen zu den Posts
+def fetch_and_add_post_by_id(post_id, max_comments_layer_1, all_posts, total_api_calls):
+    logging.info(f"post_id: {post_id} wurde aufgerufen")
+    post_data, api_calls = get_post_by_id(post_id, max_comments_layer_1)
     if post_data:
         all_posts.append(post_data)
         total_api_calls += api_calls
     return total_api_calls
 
 # Methode zum Abrufen von Beiträgen aus wichtigen Subreddits
-def fetch_posts_from_subreddits(subreddits, start_time, end_time, max_submissions, max_comments_layer_1, all_posts, total_api_calls):
-    logging.info(f"Methode: fetch_posts_from_subreddits wurde aufgerufen")
-    logging.info(f"Subreddits: {subreddits}, Zeitrahmen: {start_time} bis {end_time}")
+def fetch_posts_from_subreddits(subreddits, max_submissions, max_comments_layer_1, all_posts, total_api_calls):
     for subreddit in subreddits:
-        posts, api_calls = get_posts_in_timeframe(subreddit, start_time, end_time, max_submissions, max_comments_layer_1)
+        posts, api_calls = get_posts_in_timeframe(subreddit, max_submissions, max_comments_layer_1)
         all_posts.extend(posts)
         total_api_calls += api_calls
     return total_api_calls
@@ -141,23 +138,18 @@ def main():
     max_submissions = 10  # Maximale Anzahl der Beiträge, die von einem Subreddit abgerufen werden sollen
     max_comments_layer_1 = 10  # Maximale Anzahl der ersten Schicht von Kommentaren, die abgerufen werden sollen
 
-    # Definieren des Zeitrahmens (z.B. bis zu 1 Tag in der Vergangenheit)
-    end_time = datetime.datetime.now(datetime.timezone.utc)  # Aktuelle Zeit in UTC
-    start_time = end_time - datetime.timedelta(days=1)  # Zeitrahmen: 1 Tag zurück
-
     logging.info(f"----------------------------------------------------------------------------------")
     logging.info(f"Main Methode gestartet")
-    logging.info(f"Zeitrahmen: {start_time} bis {end_time}")
 
     # Sammeln von Beiträgen innerhalb des Zeitrahmens
     all_posts = []
     total_api_calls = 0
 
-    # Beispiel zum Abrufen eines Beitrags über die URL
-    total_api_calls = fetch_and_add_post_by_url('https://www.reddit.com/r/wallstreetbets/comments/l6uhhn/exit_the_system/', max_comments_layer_1, all_posts, total_api_calls)
+    # Beispiel zum Abrufen eines Beitrags über die ID
+    total_api_calls = fetch_and_add_post_by_id('1f89u8y', max_comments_layer_1, all_posts, total_api_calls)
 
     # Abrufen von Beiträgen aus den wichtigen Subreddits (auskommentiert)
-    # total_api_calls = fetch_posts_from_subreddits(important_subreddits, start_time, end_time, max_submissions, max_comments_layer_1, all_posts, total_api_calls)
+    # total_api_calls = fetch_posts_from_subreddits(['stocks'], max_submissions, max_comments_layer_1, all_posts, total_api_calls)
 
     # Speichern der Daten als json-Datei
     if os.path.exists('json/reddit_finance_posts.json'):

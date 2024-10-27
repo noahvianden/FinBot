@@ -2,75 +2,108 @@ import json
 import os
 import re
 from datetime import datetime, timezone
-from collections import defaultdict
-from helper.helper import companies_dict  # Importiere das Dictionary aus helper.py
+from helper.helper import companies_dict, market_indicators  # Import the Dictionary and the List from helper.py
 
-# Eingabedatei und Ausgabeverzeichnis
-input_file = r'C:\Users\noahv\Downloads\r_stocks_posts.jsonl'
-output_dir = 'historical_data/'
+# Input file and output directory
+input_file = r'C:\Users\noahv\Downloads\r_stockmarket_posts.jsonl'
+output_dir = 'historical_data_clean/'
 
-
-# Hilfsfunktion zum Erstellen des Dateinamens
+# Helper function to create the filename
 def generate_filename(subreddit, created_utc):
     date = datetime.fromtimestamp(created_utc, timezone.utc)
     year = date.strftime('%Y')
     month = date.strftime('%m')
 
-    # Ordner für Jahr und Monat erstellen
+    # Create folders for year and month
     sub_dir = os.path.join(output_dir, year, month)
-    os.makedirs(sub_dir, exist_ok=True)
+    return os.path.join(sub_dir, f"reddit_{subreddit}_{date.strftime('%Y_%m_%d')}.jsonl")
 
-    return os.path.join(sub_dir, f"reddit_{subreddit}_{date.strftime('%Y_%m_%d')}.json")
-
-
-# Funktion zum Verarbeiten und Schreiben der Dateien
+# Function to process and write the files
 def process_reddit_data():
-    # Datenstruktur für gesammelte Beiträge
-    data_by_file = defaultdict(list)
+    # Precompile regex patterns
+    company_patterns = []
+    for company, ticker in companies_dict.items():
+        company_lower = company.lower()
+        ticker_lower = ticker.lower()
+        company_pattern = re.compile(r'\b' + re.escape(company_lower) + r'\b')
+        ticker_pattern = re.compile(r'\b' + re.escape(ticker_lower) + r'\b')
+        company_patterns.append((company, company_pattern))
+        company_patterns.append((ticker, ticker_pattern))
+
+    indicator_patterns = []
+    for indicator in market_indicators:
+        indicator_lower = indicator.lower()
+        indicator_pattern = re.compile(r'\b' + re.escape(indicator_lower) + r'\b')
+        indicator_patterns.append((indicator, indicator_pattern))
+
+    # Open file handles dict
+    file_handles = {}
 
     with open(input_file, 'r', encoding='utf-8') as file:
         for line in file:
             entry = json.loads(line.strip())
 
-            # Eintragsinformationen extrahieren
+            # Extract entry information
             subreddit = entry.get("subreddit")
-            title = entry.get("title", "").lower()
-            selftext = entry.get("selftext", "").lower()
+            title = entry.get("title", "")
+            selftext = entry.get("selftext", "")
             post_id = entry.get("id")
             created_utc = entry.get("created_utc")
 
-            # Prüfen, ob der Beitrag eine der Aktien erwähnt
-            mentioned = False
-            for company, ticker in companies_dict.items():
-                # Erstellen von regulären Ausdrücken, um nur ganze Wörter zu finden
-                company_pattern = re.compile(r'\b' + re.escape(company.lower()) + r'\b')
-                ticker_pattern = re.compile(r'\b' + re.escape(ticker.lower()) + r'\b')
-
-                if company_pattern.search(title) or company_pattern.search(selftext) or ticker_pattern.search(
-                        title) or ticker_pattern.search(selftext):
-                    mentioned = True
-                    break
-
-            if not mentioned:
+            # Skip entries without title and text
+            if not title and not selftext:
                 continue
 
-            # Relevante Datenstruktur
+            # Convert title and text to lowercase for search
+            title_lower = title.lower()
+            selftext_lower = selftext.lower()
+
+            # Sets for found matches to avoid duplicates
+            matched_tickers = set()
+            matched_indicators = set()
+
+            # Check for mention of companies and ticker symbols
+            for name, pattern in company_patterns:
+                if pattern.search(title_lower) or pattern.search(selftext_lower):
+                    matched_tickers.add(name)
+
+            # Check for mention of market indicators
+            for indicator, pattern in indicator_patterns:
+                if pattern.search(title_lower) or pattern.search(selftext_lower):
+                    matched_indicators.add(indicator)
+
+            # If no matches found, skip
+            if not matched_tickers and not matched_indicators:
+                continue
+
+            # Relevant data structure
             post_data = {
                 "subreddit": subreddit,
-                "title": entry.get("title"),
-                "id": post_id
+                "title": title,
+                "id": post_id,
+                "matched": {
+                    "tickers": list(matched_tickers),
+                    "market_indicators": list(matched_indicators)
+                }
             }
 
-            # Datei für den Beitrag bestimmen
+            # Determine file for the post
             filename = generate_filename(subreddit, created_utc)
-            data_by_file[filename].append(post_data)
 
-    # In Dateien schreiben
-    for filename, posts in data_by_file.items():
-        with open(filename, 'w', encoding='utf-8') as output_file:
-            json.dump(posts, output_file, ensure_ascii=False, indent=4)
+            # Write post_data to the file
+            if filename not in file_handles:
+                os.makedirs(os.path.dirname(filename), exist_ok=True)
+                file_handles[filename] = open(filename, 'a', encoding='utf-8')
 
+            file_handles[filename].write(json.dumps(post_data, ensure_ascii=False) + '\n')
 
-# Hauptfunktion ausführen
+    # Close all open file handles
+    for f in file_handles.values():
+        f.close()
+
 if __name__ == "__main__":
+    start_time = datetime.now()
     process_reddit_data()
+    end_time = datetime.now()
+    duration = end_time - start_time
+    print(f"Zeitdauer: {duration}")
