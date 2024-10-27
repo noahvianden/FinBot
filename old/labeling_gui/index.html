@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labeling Tool</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', 'Noto Color Emoji', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            margin-top: 0;
+            color: #007bff;
+        }
+        .comments {
+            margin-bottom: 1.5rem;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            margin-bottom: 0.5rem;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            position: relative;
+        }
+        .comment-text {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            min-height: 100px;
+        }
+        .comment-labels {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: flex-end;
+            justify-content: space-between;
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        button {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+        }
+        button[name="label"][value="positiv"] {
+            background-color: #28a745;
+            color: #ffffff;
+        }
+        button[name="label"][value="negativ"] {
+            background-color: #dc3545;
+            color: #ffffff;
+        }
+        button[name="label"][value="neutral"] {
+            background-color: #ffc107;
+            color: #ffffff;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const commentsDiv = document.querySelector('.comments');
+            if (sessionStorage.getItem('scrollPosition')) {
+                commentsDiv.scrollTop = sessionStorage.getItem('scrollPosition');
+            }
+
+            commentsDiv.addEventListener('scroll', function() {
+                sessionStorage.setItem('scrollPosition', commentsDiv.scrollTop);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h2>{{ post['title'] }}</h2>
+            <p>{{ post['selftext'] }}</p>
+            <div class="comments" style="max-height: 800px; overflow-y: auto;">
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tbody>
+                        {% for comment in post['top_comments'] %}
+                            {% if comment['body'] is not none and comment['body'] != '[deleted]' and comment['body'] != '' %}
+                                <tr>
+                                    <td style="border-bottom: 1px solid #e0e0e0;">{{ comment['body'] |safe }}</td>
+                                    <td style="padding: 0.5rem; border-bottom: 1px solid #e0e0e0; text-align: center;">
+                                        <form action="{{ url_for('label') }}" method="post" style="display:inline;">
+                                            <input type="hidden" name="label_type" value="comment">
+                                            <input type="hidden" name="comment_index" value="{{ loop.index0 }}">
+                                            <button type="submit" name="label" value="positiv" title="Positiv"></button>
+                                            <button type="submit" name="label" value="negativ" title="Negativ"></button>
+                                            <button type="submit" name="label" value="neutral" title="Neutral"></button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            {% endif %}
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <form action="{{ url_for('label') }}" method="post">
+            <input type="hidden" name="label_type" value="post">
+            <div class="buttons">
+                <button type="submit" name="label" value="positiv">Positiv</button>
+                <button type="submit" name="label" value="negativ">Negativ</button>
+                <button type="submit" name="label" value="neutral">Neutral</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
