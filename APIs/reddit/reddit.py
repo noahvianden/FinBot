@@ -146,7 +146,7 @@ def main():
     total_api_calls = 0
 
     # Beispiel zum Abrufen eines Beitrags über die ID
-    total_api_calls = fetch_and_add_post_by_id('1f89u8y', max_comments_layer_1, all_posts, total_api_calls)
+    total_api_calls = fetch_and_add_post_by_id('10aywle', max_comments_layer_1, all_posts, total_api_calls)
 
     # Abrufen von Beiträgen aus den wichtigen Subreddits (auskommentiert)
     # total_api_calls = fetch_posts_from_subreddits(['stocks'], max_submissions, max_comments_layer_1, all_posts, total_api_calls)

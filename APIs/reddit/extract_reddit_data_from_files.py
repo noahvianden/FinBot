@@ -4,9 +4,9 @@ import re
 from datetime import datetime, timezone
 from helper.helper import companies_dict, market_indicators  # Import the Dictionary and the List from helper.py
 
-# Input file and output directory
-input_file = r'C:\Users\noahv\Downloads\r_stockmarket_posts.jsonl'
-output_dir = 'historical_data_clean/'
+# Input and output directories
+input_dir = 'historical_data_raw/'  # Directory containing all .jsonl files
+output_dir = 'historical_data_clean/'  # Directory for cleaned data
 
 # Helper function to create the filename
 def generate_filename(subreddit, created_utc):
@@ -19,27 +19,20 @@ def generate_filename(subreddit, created_utc):
     return os.path.join(sub_dir, f"reddit_{subreddit}_{date.strftime('%Y_%m_%d')}.jsonl")
 
 # Function to process and write the files
-def process_reddit_data():
-    # Precompile regex patterns
-    company_patterns = []
-    for company, ticker in companies_dict.items():
-        company_lower = company.lower()
-        ticker_lower = ticker.lower()
-        company_pattern = re.compile(r'\b' + re.escape(company_lower) + r'\b')
-        ticker_pattern = re.compile(r'\b' + re.escape(ticker_lower) + r'\b')
-        company_patterns.append((company, company_pattern))
-        company_patterns.append((ticker, ticker_pattern))
+def process_reddit_data(file_path):
+    # Combine company names and tickers into one list
+    company_terms = [company.lower() for company in companies_dict.keys()] + [ticker.lower() for ticker in companies_dict.values()]
+    # Build a combined regex pattern for companies
+    company_pattern = re.compile(r'\b(' + '|'.join(re.escape(term) for term in company_terms) + r')\b')
 
-    indicator_patterns = []
-    for indicator in market_indicators:
-        indicator_lower = indicator.lower()
-        indicator_pattern = re.compile(r'\b' + re.escape(indicator_lower) + r'\b')
-        indicator_patterns.append((indicator, indicator_pattern))
+    # Build a combined regex pattern for market indicators
+    indicator_terms = [indicator.lower() for indicator in market_indicators]
+    indicator_pattern = re.compile(r'\b(' + '|'.join(re.escape(term) for term in indicator_terms) + r')\b')
 
     # Open file handles dict
     file_handles = {}
 
-    with open(input_file, 'r', encoding='utf-8') as file:
+    with open(file_path, 'r', encoding='utf-8') as file:
         for line in file:
             entry = json.loads(line.strip())
 
@@ -49,6 +42,7 @@ def process_reddit_data():
             selftext = entry.get("selftext", "")
             post_id = entry.get("id")
             created_utc = entry.get("created_utc")
+            num_comments = entry.get("num_comments")
 
             # Skip entries without title and text
             if not title and not selftext:
@@ -57,20 +51,11 @@ def process_reddit_data():
             # Convert title and text to lowercase for search
             title_lower = title.lower()
             selftext_lower = selftext.lower()
+            combined_text = title_lower + ' ' + selftext_lower
 
-            # Sets for found matches to avoid duplicates
-            matched_tickers = set()
-            matched_indicators = set()
-
-            # Check for mention of companies and ticker symbols
-            for name, pattern in company_patterns:
-                if pattern.search(title_lower) or pattern.search(selftext_lower):
-                    matched_tickers.add(name)
-
-            # Check for mention of market indicators
-            for indicator, pattern in indicator_patterns:
-                if pattern.search(title_lower) or pattern.search(selftext_lower):
-                    matched_indicators.add(indicator)
+            # Find all matches in the text
+            matched_tickers = set(company_pattern.findall(combined_text))
+            matched_indicators = set(indicator_pattern.findall(combined_text))
 
             # If no matches found, skip
             if not matched_tickers and not matched_indicators:
@@ -81,6 +66,8 @@ def process_reddit_data():
                 "subreddit": subreddit,
                 "title": title,
                 "id": post_id,
+                "created": created_utc,
+                "num_comments": num_comments,
                 "matched": {
                     "tickers": list(matched_tickers),
                     "market_indicators": list(matched_indicators)
@@ -101,9 +88,17 @@ def process_reddit_data():
     for f in file_handles.values():
         f.close()
 
+# Main function to process all .jsonl files in the directory
 if __name__ == "__main__":
     start_time = datetime.now()
-    process_reddit_data()
+
+    # Process each .jsonl file in the input directory
+    for filename in os.listdir(input_dir):
+        if filename.endswith('.jsonl'):
+            file_path = os.path.join(input_dir, filename)
+            print(f"Processing file: {filename}")
+            process_reddit_data(file_path)
+
     end_time = datetime.now()
     duration = end_time - start_time
     print(f"Zeitdauer: {duration}")
