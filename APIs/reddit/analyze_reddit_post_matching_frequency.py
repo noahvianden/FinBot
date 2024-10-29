@@ -6,7 +6,7 @@ import datetime
 start_time = datetime.datetime.now()
 
 # Root directory containing all processed .jsonl files
-data_dir = 'historical_data_clean/'
+data_dir = 'historical_post_data_clean/'
 
 # Initialize nested dictionaries for counts
 ticker_data_by_year = defaultdict(lambda: defaultdict(Counter))  # {year: {subreddit: Counter()}}

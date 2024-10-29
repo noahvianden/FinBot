@@ -5,8 +5,8 @@ from datetime import datetime, timezone
 from helper.helper import companies_dict, market_indicators  # Import the Dictionary and the List from helper.py
 
 # Input and output directories
-input_dir = 'historical_data_raw/'  # Directory containing all .jsonl files
-output_dir = 'historical_data_clean/'  # Directory for cleaned data
+input_dir = 'historical_post_data_raw/'  # Directory containing all .jsonl files
+output_dir = 'historical_post_data_clean/'  # Directory for cleaned data
 
 # Helper function to create the filename
 def generate_filename(subreddit, created_utc):
