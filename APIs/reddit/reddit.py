@@ -146,16 +146,16 @@ def main():
     total_api_calls = 0
 
     # Beispiel zum Abrufen eines Beitrags über die ID
-    total_api_calls = fetch_and_add_post_by_id('10aywle', max_comments_layer_1, all_posts, total_api_calls)
+    total_api_calls = fetch_and_add_post_by_id('5qhzcy', max_comments_layer_1, all_posts, total_api_calls)
 
     # Abrufen von Beiträgen aus den wichtigen Subreddits (auskommentiert)
     # total_api_calls = fetch_posts_from_subreddits(['stocks'], max_submissions, max_comments_layer_1, all_posts, total_api_calls)
 
     # Speichern der Daten als json-Datei
-    if os.path.exists('json/reddit_finance_posts.json'):
+    if os.path.exists('reddit_finance_posts.json'):
         logging.warning("Die Datei reddit_finance_posts.json existiert bereits und wird überschrieben.")
 
-    with codecs.open('json/reddit_finance_posts.json', 'w', encoding='utf-8') as json_file:
+    with codecs.open('reddit_finance_posts.json', 'w', encoding='utf-8') as json_file:
         json.dump(all_posts, json_file, ensure_ascii=True, indent=4)  # Speichern der gesammelten Beiträge in einer JSON-Datei
 
     logging.info("Die Reddit-Beiträge wurden erfolgreich gespeichert")
