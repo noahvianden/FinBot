@@ -4,43 +4,77 @@ import logging
 import praw
 import time
 import threading
+import requests
+from requests.auth import HTTPBasicAuth
+
+from APIs.reddit.helper.reddit_api_rate_limit import rate_limit_remaining
 
 # Configure logging
-logging.basicConfig(level=logging.INFO, filename='reddit_fetcher.log', filemode='a',
-                    format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(
+    level=logging.INFO,
+    filename='reddit_fetcher_100.log',
+    filemode='a',
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
 
 # Reddit API credentials (replace with your own)
-reddit = praw.Reddit(client_id='u9wPL-7SY7LwVNTrImjS-w',
-                         client_secret='3Y-1RHbp2rizAZRRji79OdIdImQx5w',
-                         user_agent='FinBot/0.1 by FinBot_BA')
+client_id = 'u9wPL-7SY7LwVNTrImjS-w'
+client_secret = '3Y-1RHbp2rizAZRRji79OdIdImQx5w'
+username = 'FinBot_BA'
+password = 'FOM-Dual-2021'
+user_agent = 'FinBot/0.1 by FinBot_BA'
 
+# Authenticate and get access token
+auth = HTTPBasicAuth(client_id, client_secret)
+data = {'grant_type': 'password', 'username': username, 'password': password}
+headers = {'User-Agent': user_agent}
 
-# Rate limiter to respect Reddit's API limits
+response = requests.post(
+    'https://www.reddit.com/api/v1/access_token',
+    auth=auth,
+    data=data,
+    headers=headers
+)
+token = response.json().get('access_token')
+if not token:
+    logging.error("Fehler beim Abrufen des Tokens.")
+    exit()
+
+# Set authorization header with the token
+headers['Authorization'] = f'bearer {token}'
+
+# Initialize PRAW with the access token
+reddit = praw.Reddit(
+    client_id=client_id,
+    client_secret=client_secret,
+    user_agent=user_agent,
+    username=username,
+    password=password
+)
+
+# Rate limiter that checks Reddit's rate limit headers
 class RateLimiter:
-    def __init__(self, max_calls, period):
-        self.lock = threading.Lock()
-        self.calls = 0
-        self.max_calls = max_calls
-        self.period = period
-        self.start_time = time.time()
+    def __init__(self):
+        self.rate_limit_used = 0
+        self.rate_limit_remaining = 600  # Default Reddit limit
+        self.rate_limit_reset = 600  # Time in seconds until reset
+
+    def update_limits(self, response_headers):
+        try:
+            self.rate_limit_used = float(response_headers.get('X-Ratelimit-Used', 0))
+            self.rate_limit_remaining = float(response_headers.get('X-Ratelimit-Remaining', 600))
+            self.rate_limit_reset = float(response_headers.get('X-Ratelimit-Reset', 600))
+        except ValueError:
+            # If headers are missing or invalid, default values are used
+            pass
 
     def wait(self):
-        with self.lock:
-            self.calls += 1
-            elapsed = time.time() - self.start_time
-            if elapsed >= self.period:
-                self.calls = 0
-                self.start_time = time.time()
-            elif self.calls > self.max_calls:
-                sleep_time = self.period - elapsed
-                logging.info(f"Rate limit reached. Sleeping for {sleep_time:.2f} seconds.")
-                time.sleep(sleep_time)
-                self.calls = 0
-                self.start_time = time.time()
+        if self.rate_limit_remaining <= 50:
+            sleep_time = self.rate_limit_reset
+            logging.info(f"Rate limit reached. Sleeping for {sleep_time:.2f} seconds.")
+            time.sleep(sleep_time)
 
-
-rate_limiter = RateLimiter(max_calls=100, period=60)  # Adjust according to Reddit's API policy
-
+rate_limiter = RateLimiter()
 
 # Function to get comment data recursively
 def get_comment_tree(comment):
@@ -54,13 +88,17 @@ def get_comment_tree(comment):
     else:
         return None
 
-
 # Function to fetch a post and its comments
 def get_post_with_comments(post_id):
     try:
-        rate_limiter.wait()
-        logging.info(f"Fetching post ID: {post_id}")
+        # Fetch the submission
         submission = reddit.submission(id=post_id)
+        # Access the response headers via the requestor
+        # response_headers = submission._reddit._core._requestor._http.headers
+        #rate_limiter.update_limits(response_headers)
+        #rate_limiter.wait()
+
+        # logging.info(f"Fetching post ID: {post_id}")
 
         # Fetch comments and maintain nested structure
         submission.comments.replace_more(limit=None)
@@ -81,7 +119,6 @@ def get_post_with_comments(post_id):
         logging.error(f"Error fetching post ID {post_id}: {e}")
         return None
 
-
 # Function to process a single file of posts
 def process_file(input_file, output_file, processed_posts):
     logging.info(f"Processing file: {input_file}")
@@ -96,13 +133,12 @@ def process_file(input_file, output_file, processed_posts):
                 json.dump(post_data, outfile, ensure_ascii=False)
                 outfile.write('\n')
                 processed_posts.add(post_id)
-            # Save progress after each post
-            with open('processed_posts.txt', 'a', encoding='utf-8') as f:
-                f.write(post_id + '\n')
-
+                # Save progress after each post
+                #with open('processed_posts.txt', 'a', encoding='utf-8') as f:
+                #    f.write(post_id + '\n')
 
 # Main function to traverse directories and process posts
-def process_posts(data_dir, start_point=None):
+def process_posts(data_dir, count_filter, start_point=None):
     """
     data_dir: Root directory where the posts are stored.
     start_point: Tuple (year, month, day, subreddit, filename) to resume processing.
@@ -113,8 +149,7 @@ def process_posts(data_dir, start_point=None):
         with open('processed_posts.txt', 'r', encoding='utf-8') as f:
             processed_posts = set(line.strip() for line in f)
 
-    start_year, start_month, start_day, start_subreddit, start_filename = start_point if start_point else (
-    None, None, None, None, None)
+    start_year, start_month, start_day, start_subreddit, start_filename = start_point if start_point else (None, None, None, None, None)
     start_processing = not start_point  # Start immediately if no start point
     for year in sorted(os.listdir(data_dir)):
         if not os.path.isdir(os.path.join(data_dir, year)):
@@ -143,7 +178,7 @@ def process_posts(data_dir, start_point=None):
                 if not start_processing:
                     continue
                 input_file = os.path.join(month_dir, filename)
-                output_dir = os.path.join('output', year, month)
+                output_dir = os.path.join('output_' + str(count_filter), year, month)
                 os.makedirs(output_dir, exist_ok=True)
                 output_file = os.path.join(output_dir, filename)
                 if os.path.exists(output_file):
@@ -151,10 +186,10 @@ def process_posts(data_dir, start_point=None):
                     continue
                 process_file(input_file, output_file, processed_posts)
 
-
 # Example usage
 if __name__ == "__main__":
-    data_directory = './historical_post_data_clean'  # Replace with your data directory path
+    count_filter = 100
+    data_directory = './helper/output_filtered_' + str(count_filter)  # Replace with your data directory path
     # To resume from a specific point, set start_point to (year, month, day, subreddit, filename)
     start_point = None  # e.g., ('2021', '08', '15', 'python', 'reddit_python_2021_08_15.jsonl')
-    process_posts(data_directory, start_point)
+    process_posts(data_directory, count_filter, start_point)
