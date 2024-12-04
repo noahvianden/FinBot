@@ -2,7 +2,7 @@ import googleapiclient.discovery
 import googleapiclient.errors
 import datetime
 import json
-from helper.helper import companies_dict
+from APIs.helper.ticker_and_indicator import companies_dict
 
 
 def get_video_titles_and_comments_for_companies(companies):
