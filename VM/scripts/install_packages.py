@@ -12,7 +12,8 @@ packages = [
     "transformers",
     "sentence-transformers",
     "nltk",
-    "finbert-embedding"
+    "finbert-embedding",
+    "tf-keras"
 ]
 
 def install(package):
