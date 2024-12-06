@@ -15705,3 +15705,120 @@
 2024-11-19 14:04:47,207 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
 2024-11-19 14:04:48,410 [INFO] Beginne mit der Verarbeitung der Datei: /home/noah_bachelorarbeit/FinBotProject/output_filtered_70/2018/04/reddit_2018_04_09.jsonl
 2024-11-19 14:04:48,413 [INFO] Verarbeite Post mit ID: 8azo6j
+2024-12-06 21:25:01,139 [INFO] Starte die Verarbeitung.
+2024-12-06 21:25:04,014 [INFO] Gesamtanzahl der zu verarbeitenden Dateien: 1881
+2024-12-06 21:25:04,018 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:25:04,018 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:25:06,426 [INFO] Beginne mit der Verarbeitung der Datei: ../VM_Projects/70/input_data\2013\12\reddit_2013_12_10.jsonl
+2024-12-06 21:25:06,427 [INFO] Verarbeite Post mit ID: 1sjf6w
+2024-12-06 21:25:10,412 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:25:10,412 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:30:01,295 [INFO] Starte die Verarbeitung.
+2024-12-06 21:32:24,340 [INFO] Starte die Verarbeitung.
+2024-12-06 21:33:35,881 [INFO] Gesamtanzahl der zu verarbeitenden Dateien: 1881
+2024-12-06 21:33:35,890 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:33:35,890 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:34:00,167 [INFO] Fortschritt aus ../VM_Projects/70/progress_data\2013\12\reddit_2013_12_10.jsonl.progress.json geladen. Bereits verarbeitet: 1 Posts.
+2024-12-06 21:34:00,167 [INFO] Beginne mit der Verarbeitung der Datei: ../VM_Projects/70/input_data\2013\12\reddit_2013_12_10.jsonl
+2024-12-06 21:34:19,772 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:34:19,773 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:34:47,515 [INFO] Fortschritt aus ../VM_Projects/70/progress_data\2014\02\reddit_2014_02_02.jsonl.progress.json geladen. Bereits verarbeitet: 1 Posts.
+2024-12-06 21:34:47,516 [INFO] Beginne mit der Verarbeitung der Datei: ../VM_Projects/70/input_data\2014\02\reddit_2014_02_02.jsonl
+2024-12-06 21:34:47,525 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:34:47,525 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:34:56,463 [INFO] Fortschritt aus ../VM_Projects/70/progress_data\2014\02\reddit_2014_02_17.jsonl.progress.json geladen. Bereits verarbeitet: 1 Posts.
+2024-12-06 21:34:56,464 [INFO] Beginne mit der Verarbeitung der Datei: ../VM_Projects/70/input_data\2014\02\reddit_2014_02_17.jsonl
+2024-12-06 21:34:56,474 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:34:56,474 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:34:58,109 [INFO] Fortschritt aus ../VM_Projects/70/progress_data\2014\08\reddit_2014_08_15.jsonl.progress.json geladen. Bereits verarbeitet: 1 Posts.
+2024-12-06 21:34:58,109 [INFO] Beginne mit der Verarbeitung der Datei: ../VM_Projects/70/input_data\2014\08\reddit_2014_08_15.jsonl
+2024-12-06 21:34:58,117 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:34:58,118 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:35:00,163 [INFO] Beginne mit der Verarbeitung der Datei: ../VM_Projects/70/input_data\2014\09\reddit_2014_09_15.jsonl
+2024-12-06 21:35:00,164 [INFO] Verarbeite Post mit ID: 2ggtnu
+2024-12-06 21:35:05,558 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:35:05,558 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:37:18,023 [INFO] Starte die Verarbeitung.
+2024-12-06 21:37:20,978 [INFO] Gesamtanzahl der zu verarbeitenden Dateien: 1881
+2024-12-06 21:37:20,988 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:37:20,988 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:37:29,608 [INFO] Fortschritt aus ../VM_Projects/70/progress_data\2013\12\reddit_2013_12_10.jsonl.progress.json geladen. Bereits verarbeitet: 1 Posts.
+2024-12-06 21:37:29,608 [INFO] Beginne mit der Verarbeitung der Datei: ../VM_Projects/70/input_data\2013\12\reddit_2013_12_10.jsonl
+2024-12-06 21:37:54,718 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:37:54,718 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:38:11,468 [INFO] Fortschritt aus ../VM_Projects/70/progress_data\2014\02\reddit_2014_02_02.jsonl.progress.json geladen. Bereits verarbeitet: 1 Posts.
+2024-12-06 21:38:11,468 [INFO] Beginne mit der Verarbeitung der Datei: ../VM_Projects/70/input_data\2014\02\reddit_2014_02_02.jsonl
+2024-12-06 21:38:11,476 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:38:11,476 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:38:14,207 [INFO] Fortschritt aus ../VM_Projects/70/progress_data\2014\02\reddit_2014_02_17.jsonl.progress.json geladen. Bereits verarbeitet: 1 Posts.
+2024-12-06 21:38:14,207 [INFO] Beginne mit der Verarbeitung der Datei: ../VM_Projects/70/input_data\2014\02\reddit_2014_02_17.jsonl
+2024-12-06 21:38:14,216 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:38:14,216 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:38:16,538 [INFO] Fortschritt aus ../VM_Projects/70/progress_data\2014\08\reddit_2014_08_15.jsonl.progress.json geladen. Bereits verarbeitet: 1 Posts.
+2024-12-06 21:38:16,538 [INFO] Beginne mit der Verarbeitung der Datei: ../VM_Projects/70/input_data\2014\08\reddit_2014_08_15.jsonl
+2024-12-06 21:38:16,546 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:38:16,547 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:38:19,073 [INFO] Fortschritt aus ../VM_Projects/70/progress_data\2014\09\reddit_2014_09_15.jsonl.progress.json geladen. Bereits verarbeitet: 1 Posts.
+2024-12-06 21:38:19,073 [INFO] Beginne mit der Verarbeitung der Datei: ../VM_Projects/70/input_data\2014\09\reddit_2014_09_15.jsonl
+2024-12-06 21:38:19,082 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:38:19,082 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:38:34,540 [INFO] Beginne mit der Verarbeitung der Datei: ../VM_Projects/70/input_data\2014\11\reddit_2014_11_17.jsonl
+2024-12-06 21:38:34,541 [INFO] Verarbeite Post mit ID: 2minom
+2024-12-06 21:38:38,674 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:38:38,674 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:39:08,581 [INFO] Beginne mit der Verarbeitung der Datei: ../VM_Projects/70/input_data\2015\01\reddit_2015_01_22.jsonl
+2024-12-06 21:39:08,582 [INFO] Verarbeite Post mit ID: 2t8gau
+2024-12-06 21:39:12,413 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:39:12,414 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:39:34,712 [INFO] Beginne mit der Verarbeitung der Datei: ../VM_Projects/70/input_data\2015\02\reddit_2015_02_20.jsonl
+2024-12-06 21:39:34,713 [INFO] Verarbeite Post mit ID: 2wkral
+2024-12-06 21:39:37,513 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:39:37,513 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:39:38,944 [INFO] Beginne mit der Verarbeitung der Datei: ../VM_Projects/70/input_data\2015\04\reddit_2015_04_30.jsonl
+2024-12-06 21:39:38,946 [INFO] Verarbeite Post mit ID: 34g4h4
+2024-12-06 21:39:43,391 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:39:43,391 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:39:44,861 [INFO] Beginne mit der Verarbeitung der Datei: ../VM_Projects/70/input_data\2015\05\reddit_2015_05_17.jsonl
+2024-12-06 21:39:44,863 [INFO] Verarbeite Post mit ID: 367xpe
+2024-12-06 21:39:50,593 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:39:50,593 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:39:51,999 [INFO] Beginne mit der Verarbeitung der Datei: ../VM_Projects/70/input_data\2015\07\reddit_2015_07_14.jsonl
+2024-12-06 21:39:52,002 [INFO] Verarbeite Post mit ID: 3db2fy
+2024-12-06 21:39:56,086 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:39:56,086 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:39:57,575 [INFO] Beginne mit der Verarbeitung der Datei: ../VM_Projects/70/input_data\2015\07\reddit_2015_07_17.jsonl
+2024-12-06 21:39:57,577 [INFO] Verarbeite Post mit ID: 3dmm5j
+2024-12-06 21:40:01,083 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:40:01,083 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:40:02,588 [INFO] Beginne mit der Verarbeitung der Datei: ../VM_Projects/70/input_data\2015\07\reddit_2015_07_22.jsonl
+2024-12-06 21:40:02,591 [INFO] Verarbeite Post mit ID: 3e75zy
+2024-12-06 21:40:06,426 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:40:06,427 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:40:07,857 [INFO] Beginne mit der Verarbeitung der Datei: ../VM_Projects/70/input_data\2015\08\reddit_2015_08_22.jsonl
+2024-12-06 21:40:07,860 [INFO] Verarbeite Post mit ID: 3hy8qb
+2024-12-06 21:40:11,022 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:40:11,022 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:40:12,487 [INFO] Beginne mit der Verarbeitung der Datei: ../VM_Projects/70/input_data\2015\08\reddit_2015_08_26.jsonl
+2024-12-06 21:40:12,490 [INFO] Verarbeite Post mit ID: 3ifede
+2024-12-06 21:40:16,498 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:40:16,498 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:40:18,276 [INFO] Beginne mit der Verarbeitung der Datei: ../VM_Projects/70/input_data\2015\09\reddit_2015_09_06.jsonl
+2024-12-06 21:40:18,278 [INFO] Verarbeite Post mit ID: 3ju4tb
+2024-12-06 21:40:21,751 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:40:21,751 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:40:23,382 [INFO] Beginne mit der Verarbeitung der Datei: ../VM_Projects/70/input_data\2015\10\reddit_2015_10_07.jsonl
+2024-12-06 21:40:23,383 [INFO] Verarbeite Post mit ID: 3nsudb
+2024-12-06 21:40:27,396 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:40:27,396 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:40:29,253 [INFO] Beginne mit der Verarbeitung der Datei: ../VM_Projects/70/input_data\2015\10\reddit_2015_10_12.jsonl
+2024-12-06 21:40:29,257 [INFO] Verarbeite Post mit ID: 3oij7h
+2024-12-06 21:40:32,907 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:40:32,907 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:40:34,336 [INFO] Beginne mit der Verarbeitung der Datei: ../VM_Projects/70/input_data\2015\11\reddit_2015_11_03.jsonl
+2024-12-06 21:40:34,338 [INFO] Verarbeite Post mit ID: 3rdv3c
+2024-12-06 21:40:37,843 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:40:37,843 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-06 21:40:39,275 [INFO] Beginne mit der Verarbeitung der Datei: ../VM_Projects/70/input_data\2015\12\reddit_2015_12_07.jsonl
+2024-12-06 21:40:39,277 [INFO] Verarbeite Post mit ID: 3vt52s
+2024-12-06 21:40:42,903 [INFO] Use pytorch device_name: cpu
+2024-12-06 21:40:42,904 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
