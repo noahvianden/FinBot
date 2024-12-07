@@ -1,14 +1,16 @@
 import os
 import json
 import logging
+import cProfile
+import pstats
+import io
 from FinBot_TextMethods import TextProcessor
 from FinBot_Relations import RelationAnalyzer
 from nltk.corpus import wordnet as wn, stopwords
 
-# Logging konfigurieren
 def configure_logging(log_file_path):
     logging.basicConfig(
-        level=logging.INFO,  # Setze das Logging-Level auf INFO
+        level=logging.WARNING,
         format='%(asctime)s [%(levelname)s] %(message)s',
         handlers=[
             logging.FileHandler(log_file_path, encoding='utf-8'),
@@ -16,7 +18,6 @@ def configure_logging(log_file_path):
         ]
     )
 
-# Sicherstellen, dass NLTK-Ressourcen vollständig geladen sind
 def preload_nltk_resources():
     try:
         wn.ensure_loaded()
@@ -61,7 +62,7 @@ class PostProcessor:
 
     def process_post(self, post):
         post_id = post.get('id', 'Unbekannt')
-        logging.info(f"Verarbeite Post mit ID: {post_id}")
+        logging.warning(f"Verarbeite Post mit ID: {post_id}")
         post_title = post.get('title', '')
         post_selftext = post.get('selftext', '')
 
@@ -72,7 +73,7 @@ class PostProcessor:
             title_tickers = self.text_processor.find_tickers(post_title)
             selftext_tickers = self.text_processor.find_tickers(post_selftext)
             post_tickers = title_tickers + selftext_tickers
-        except Exception as e:
+        except Exception:
             post_tickers = []
 
         post['tickers'] = post_tickers
@@ -92,7 +93,7 @@ def read_jsonl_file(file_path):
                 try:
                     yield json.loads(line)
                 except json.JSONDecodeError:
-                    continue  # Überspringe ungültige JSON-Zeilen
+                    continue
     except Exception as e:
         logging.exception(f"Fehler beim Lesen der Datei {file_path}: {e}")
 
@@ -100,7 +101,6 @@ def process_file(input_path, output_path, progress_file):
     processor = PostProcessor()
     processed_ids = set()
 
-    # Lade den Fortschritt aus der Datei, falls vorhanden
     if os.path.exists(progress_file):
         try:
             with open(progress_file, 'r', encoding='utf-8') as pf:
@@ -109,19 +109,19 @@ def process_file(input_path, output_path, progress_file):
         except Exception as e:
             logging.exception(f"Fehler beim Laden des Fortschritts aus {progress_file}: {e}")
 
-    logging.info(f"Beginne mit der Verarbeitung der Datei: {input_path}")
+    logging.warning(f"Beginne mit der Verarbeitung der Datei: {input_path}")
 
     with open(output_path, 'a', encoding='utf-8') as outfile:
         for post in read_jsonl_file(input_path):
             post_id = post.get('id')
             if post_id in processed_ids:
-                continue  # Überspringe bereits verarbeitete Posts
+                continue
 
             processed_post = processor.process_post(post)
             outfile.write(json.dumps(processed_post) + '\n')
-
-            # Fortschritt speichern
             processed_ids.add(post_id)
+
+            # Fortschritt nicht unbedingt nach jedem Post speichern, ggf. nur gelegentlich
             try:
                 with open(progress_file, 'w', encoding='utf-8') as pf:
                     json.dump(list(processed_ids), pf)
@@ -130,8 +130,6 @@ def process_file(input_path, output_path, progress_file):
 
 def process_directory(input_dir, output_dir, progress_dir):
     files_to_process = []
-
-    # Sammeln der Dateien, die verarbeitet werden müssen
     for root, _, files in os.walk(input_dir):
         for file in files:
             if file.endswith('.jsonl'):
@@ -147,25 +145,23 @@ def process_directory(input_dir, output_dir, progress_dir):
     if not files_to_process:
         logging.warning("Keine '.jsonl'-Dateien gefunden zum Verarbeiten.")
         return
-    # Dateien sequentiell verarbeiten
+
     for input_file, output_file, progress_file in files_to_process:
         process_file(input_file, output_file, progress_file)
 
 def main():
-    count = 70
-    input_directory = f'../VM_Projects/{count}/input_data'
-    output_directory = f'../VM_Projects/{count}/output_data'
-    progress_directory = f'../VM_Projects/{count}/progress_data'
-
-    # Logdatei-Pfad dynamisch festlegen
-    log_file_path = os.path.join(progress_directory, "processing.log")
-
-    # Logging neu konfigurieren--
-    configure_logging(log_file_path)
-
-    logging.info("Starte die Verarbeitung.")
     preload_nltk_resources()
-    process_directory(input_directory, output_directory, progress_directory)
+    for count in range(10, 101, 10):
+        input_directory = f'../VM_Projects/{count}/input_data'
+        output_directory = f'../VM_Projects/{count}/output_data'
+        progress_directory = f'../VM_Projects/{count}/progress_data'
+
+        log_file_path = os.path.join(progress_directory, "processing.log")
+        configure_logging(log_file_path)
+
+        logging.info(f"Starte die Verarbeitung für Projekt {count}.")
+        process_directory(input_directory, output_directory, progress_directory)
 
 if __name__ == "__main__":
     main()
+
