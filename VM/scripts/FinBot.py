@@ -7,6 +7,7 @@ import io
 from FinBot_TextMethods import TextProcessor
 from FinBot_Relations import RelationAnalyzer
 from nltk.corpus import wordnet as wn, stopwords
+import torch
 
 def configure_logging(log_file_path):
     logging.basicConfig(
@@ -151,7 +152,7 @@ def process_directory(input_dir, output_dir, progress_dir):
 
 def main():
     preload_nltk_resources()
-    for count in range(10, 101, 10):
+    for count in range(30, 251, 10):
         input_directory = f'../VM_Projects/{count}/input_data'
         output_directory = f'../VM_Projects/{count}/output_data'
         progress_directory = f'../VM_Projects/{count}/progress_data'
@@ -160,6 +161,7 @@ def main():
         configure_logging(log_file_path)
 
         logging.info(f"Starte die Verarbeitung für Projekt {count}.")
+        print('cuda' if torch.cuda.is_available() else 'cpu')
         process_directory(input_directory, output_directory, progress_directory)
 
 if __name__ == "__main__":
