@@ -114,6 +114,9 @@ def process_file(input_path, output_path, progress_file):
 
     with open(output_path, 'a', encoding='utf-8') as outfile:
         for post in read_jsonl_file(input_path):
+            if post.get('num_comments') > 250:
+                print("überschpringen")
+                continue
             post_id = post.get('id')
             if post_id in processed_ids:
                 continue
@@ -152,10 +155,10 @@ def process_directory(input_dir, output_dir, progress_dir):
 
 def main():
     preload_nltk_resources()
-    for count in range(30, 251, 10):
-        input_directory = f'../VM_Projects/{count}/input_data'
-        output_directory = f'../VM_Projects/{count}/output_data'
-        progress_directory = f'../VM_Projects/{count}/progress_data'
+    for count in range(100, 251, 10):
+        input_directory = f'../VM_Projects_Copy/{count}/input_data'
+        output_directory = f'../VM_Projects_Copy/{count}/output_data'
+        progress_directory = f'../VM_Projects_Copy/{count}/progress_data'
 
         log_file_path = os.path.join(progress_directory, "processing.log")
         configure_logging(log_file_path)
