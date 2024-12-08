@@ -114,13 +114,10 @@ def process_file(input_path, output_path, progress_file):
 
     with open(output_path, 'a', encoding='utf-8') as outfile:
         for post in read_jsonl_file(input_path):
-            if post.get('num_comments') > 250:
-                print("überschpringen")
-                continue
             post_id = post.get('id')
             if post_id in processed_ids:
                 continue
-            if post.get('num_comments') <= 250:
+            if 150 < post.get('num_comments') <= 500:
                 processed_post = processor.process_post(post)
                 outfile.write(json.dumps(processed_post) + '\n')
                 processed_ids.add(post_id)
