@@ -44,4 +44,722 @@
 2024-12-08 13:02:30,466 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\01\reddit_2019_01_02.jsonl
 2024-12-08 13:02:30,468 [WARNING] Verarbeite Post mit ID: abwbm0
 2024-12-08 13:02:33,306 [WARNING] Verarbeite Post mit ID: aby4q2
+2024-12-08 13:05:47,180 [INFO] Starte die Verarbeitung für Projekt 100.
+2024-12-08 13:05:47,206 [INFO] Gesamtanzahl der zu verarbeitenden Dateien: 83
+2024-12-08 13:05:47,207 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-08 13:06:30,492 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2016\03\reddit_2016_03_31.jsonl
+2024-12-08 13:06:30,493 [WARNING] Verarbeite Post mit ID: 4cqxld
+2024-12-08 13:06:40,979 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2016\10\reddit_2016_10_31.jsonl
+2024-12-08 13:06:40,981 [WARNING] Verarbeite Post mit ID: 5aag4r
+2024-12-08 13:06:53,920 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2017\01\reddit_2017_01_11.jsonl
+2024-12-08 13:06:53,920 [WARNING] Verarbeite Post mit ID: 5nbyxh
+2024-12-08 13:08:49,383 [INFO] Starte die Verarbeitung für Projekt 100.
+2024-12-08 13:08:49,397 [INFO] Gesamtanzahl der zu verarbeitenden Dateien: 83
+2024-12-08 13:08:49,398 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-08 13:08:50,831 [INFO] Fortschritt aus ../VM_Projects_Copy/100/progress_data\2016\03\reddit_2016_03_31.jsonl.progress.json geladen. Bereits verarbeitet: 1 Posts.
+2024-12-08 13:08:50,831 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2016\03\reddit_2016_03_31.jsonl
+2024-12-08 13:08:50,831 [INFO] Fortschritt aus ../VM_Projects_Copy/100/progress_data\2016\10\reddit_2016_10_31.jsonl.progress.json geladen. Bereits verarbeitet: 1 Posts.
+2024-12-08 13:08:50,832 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2016\10\reddit_2016_10_31.jsonl
+2024-12-08 13:08:50,832 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2017\01\reddit_2017_01_11.jsonl
+2024-12-08 13:08:50,832 [WARNING] Verarbeite Post mit ID: 5nbyxh
+2024-12-08 13:14:49,531 [INFO] Starte die Verarbeitung für Projekt 100.
+2024-12-08 13:14:49,593 [INFO] Gesamtanzahl der zu verarbeitenden Dateien: 83
+2024-12-08 13:14:49,594 [INFO] Load pretrained SentenceTransformer: sentence-transformers/all-mpnet-base-v2
+2024-12-08 13:14:51,764 [INFO] Fortschritt aus ../VM_Projects_Copy/100/progress_data\2016\03\reddit_2016_03_31.jsonl.progress.json geladen. Bereits verarbeitet: 1 Posts.
+2024-12-08 13:14:51,764 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2016\03\reddit_2016_03_31.jsonl
+2024-12-08 13:14:51,765 [INFO] Fortschritt aus ../VM_Projects_Copy/100/progress_data\2016\10\reddit_2016_10_31.jsonl.progress.json geladen. Bereits verarbeitet: 1 Posts.
+2024-12-08 13:14:51,765 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2016\10\reddit_2016_10_31.jsonl
+2024-12-08 13:14:51,766 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2017\01\reddit_2017_01_11.jsonl
+2024-12-08 13:14:51,766 [WARNING] Verarbeite Post mit ID: 5nbyxh
+2024-12-08 13:14:55,023 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2017\03\reddit_2017_03_14.jsonl
+2024-12-08 13:14:55,024 [WARNING] Verarbeite Post mit ID: 5zcln9
+2024-12-08 13:14:59,495 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2017\04\reddit_2017_04_03.jsonl
+2024-12-08 13:14:59,496 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2017\07\reddit_2017_07_27.jsonl
+2024-12-08 13:14:59,497 [WARNING] Verarbeite Post mit ID: 6pxr4e
+2024-12-08 13:15:02,495 [WARNING] Verarbeite Post mit ID: 6pylpz
+2024-12-08 13:15:04,999 [WARNING] Verarbeite Post mit ID: 6pyqes
+2024-12-08 13:15:09,177 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\03\reddit_2018_03_03.jsonl
+2024-12-08 13:15:09,178 [WARNING] Verarbeite Post mit ID: 81kb8k
+2024-12-08 13:15:12,566 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\03\reddit_2018_03_16.jsonl
+2024-12-08 13:15:12,566 [WARNING] Verarbeite Post mit ID: 84wq9h
+2024-12-08 13:15:15,225 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\03\reddit_2018_03_22.jsonl
+2024-12-08 13:15:15,231 [WARNING] Verarbeite Post mit ID: 86bwjg
+2024-12-08 13:15:20,948 [WARNING] Verarbeite Post mit ID: 86e49c
+2024-12-08 13:15:25,092 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\04\reddit_2018_04_05.jsonl
+2024-12-08 13:15:25,093 [WARNING] Verarbeite Post mit ID: 8a3b00
+2024-12-08 13:15:26,588 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\04\reddit_2018_04_30.jsonl
+2024-12-08 13:15:26,588 [WARNING] Verarbeite Post mit ID: 8g0ugs
+2024-12-08 13:15:30,540 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\05\reddit_2018_05_26.jsonl
+2024-12-08 13:15:30,541 [WARNING] Verarbeite Post mit ID: 8m6sk3
+2024-12-08 13:15:32,907 [WARNING] Verarbeite Post mit ID: 8md374
+2024-12-08 13:15:35,595 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\07\reddit_2018_07_03.jsonl
+2024-12-08 13:15:35,596 [WARNING] Verarbeite Post mit ID: 8vwwyn
+2024-12-08 13:15:38,667 [WARNING] Verarbeite Post mit ID: 8vso46
+2024-12-08 13:15:41,399 [WARNING] Verarbeite Post mit ID: 8vsp0z
+2024-12-08 13:15:43,484 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\07\reddit_2018_07_22.jsonl
+2024-12-08 13:15:43,486 [WARNING] Verarbeite Post mit ID: 90wtpl
+2024-12-08 13:15:45,919 [WARNING] Verarbeite Post mit ID: 90zn3w
+2024-12-08 13:15:49,226 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\07\reddit_2018_07_29.jsonl
+2024-12-08 13:15:49,228 [WARNING] Verarbeite Post mit ID: 92upxq
+2024-12-08 13:15:54,149 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\08\reddit_2018_08_18.jsonl
+2024-12-08 13:15:54,150 [WARNING] Verarbeite Post mit ID: 987bs2
+2024-12-08 13:15:57,151 [WARNING] Verarbeite Post mit ID: 989o1n
+2024-12-08 13:15:59,800 [WARNING] Verarbeite Post mit ID: 98cp7z
+2024-12-08 13:16:01,749 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\11\reddit_2018_11_30.jsonl
+2024-12-08 13:16:01,750 [WARNING] Verarbeite Post mit ID: a1u3eh
+2024-12-08 13:16:03,311 [WARNING] Verarbeite Post mit ID: a1nz9k
+2024-12-08 13:16:07,440 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\01\reddit_2019_01_02.jsonl
+2024-12-08 13:16:07,441 [WARNING] Verarbeite Post mit ID: abwbm0
+2024-12-08 13:16:10,234 [WARNING] Verarbeite Post mit ID: aby4q2
+2024-12-08 13:16:14,046 [WARNING] Verarbeite Post mit ID: aby4t6
+2024-12-08 13:16:16,754 [WARNING] Verarbeite Post mit ID: abrqbf
+2024-12-08 13:16:20,496 [WARNING] Verarbeite Post mit ID: abth0l
+2024-12-08 13:16:22,417 [WARNING] Verarbeite Post mit ID: abxzjq
+2024-12-08 13:16:27,284 [WARNING] Verarbeite Post mit ID: abz6l3
+2024-12-08 13:16:30,756 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\01\reddit_2019_01_21.jsonl
+2024-12-08 13:16:30,757 [WARNING] Verarbeite Post mit ID: ai9xuy
+2024-12-08 13:16:33,137 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\03\reddit_2019_03_05.jsonl
+2024-12-08 13:16:33,139 [WARNING] Verarbeite Post mit ID: axeqa3
+2024-12-08 13:16:37,685 [WARNING] Verarbeite Post mit ID: axnh62
+2024-12-08 13:16:41,771 [WARNING] Verarbeite Post mit ID: axj3rh
+2024-12-08 13:16:45,714 [WARNING] Verarbeite Post mit ID: axngni
+2024-12-08 13:16:48,263 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\03\reddit_2019_03_11.jsonl
+2024-12-08 13:16:48,264 [WARNING] Verarbeite Post mit ID: azt5r3
+2024-12-08 13:16:51,596 [WARNING] Verarbeite Post mit ID: azv3ke
+2024-12-08 13:16:54,027 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\05\reddit_2019_05_15.jsonl
+2024-12-08 13:16:54,031 [WARNING] Verarbeite Post mit ID: bp0122
+2024-12-08 13:16:57,046 [WARNING] Verarbeite Post mit ID: bor70w
+2024-12-08 13:16:59,252 [WARNING] Verarbeite Post mit ID: bovkad
+2024-12-08 13:17:01,441 [WARNING] Verarbeite Post mit ID: bor28r
+2024-12-08 13:17:04,423 [WARNING] Verarbeite Post mit ID: bowwdt
+2024-12-08 13:17:06,755 [WARNING] Verarbeite Post mit ID: bp1xk4
+2024-12-08 13:17:10,422 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\05\reddit_2019_05_28.jsonl
+2024-12-08 13:17:10,423 [WARNING] Verarbeite Post mit ID: btyuad
+2024-12-08 13:17:13,616 [WARNING] Verarbeite Post mit ID: bu1v0h
+2024-12-08 13:17:18,916 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\06\reddit_2019_06_03.jsonl
+2024-12-08 13:17:18,920 [WARNING] Verarbeite Post mit ID: bw9fdx
+2024-12-08 13:17:21,620 [WARNING] Verarbeite Post mit ID: bwcpnh
+2024-12-08 13:17:24,772 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\07\reddit_2019_07_24.jsonl
+2024-12-08 13:17:24,772 [WARNING] Verarbeite Post mit ID: ch6bhg
+2024-12-08 13:17:29,249 [WARNING] Verarbeite Post mit ID: chdw7v
+2024-12-08 13:17:32,483 [WARNING] Verarbeite Post mit ID: charu6
+2024-12-08 13:17:38,165 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\08\reddit_2019_08_13.jsonl
+2024-12-08 13:17:38,168 [WARNING] Verarbeite Post mit ID: cps4vh
+2024-12-08 13:17:40,662 [WARNING] Verarbeite Post mit ID: cpujqc
+2024-12-08 13:17:43,130 [WARNING] Verarbeite Post mit ID: cpxevm
+2024-12-08 13:17:46,579 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\12\reddit_2019_12_01.jsonl
+2024-12-08 13:17:46,580 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\12\reddit_2019_12_20.jsonl
+2024-12-08 13:17:46,581 [WARNING] Verarbeite Post mit ID: edazey
+2024-12-08 13:17:50,140 [WARNING] Verarbeite Post mit ID: edbhjq
+2024-12-08 13:17:52,004 [WARNING] Verarbeite Post mit ID: edds29
+2024-12-08 13:17:53,852 [WARNING] Verarbeite Post mit ID: edgfmp
+2024-12-08 13:17:56,981 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\02\reddit_2020_02_19.jsonl
+2024-12-08 13:17:56,985 [WARNING] Verarbeite Post mit ID: f64aoq
+2024-12-08 13:18:01,080 [WARNING] Verarbeite Post mit ID: f6612r
 2024-12-08 13:02:38,814 [WARNING] Verarbeite Post mit ID: aby4t6
+2024-12-08 13:28:19,831 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2016\03\reddit_2016_03_31.jsonl
+2024-12-08 13:28:19,832 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2016\10\reddit_2016_10_31.jsonl
+2024-12-08 13:28:19,833 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2017\01\reddit_2017_01_11.jsonl
+2024-12-08 13:28:19,834 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2017\03\reddit_2017_03_14.jsonl
+2024-12-08 13:28:19,835 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2017\04\reddit_2017_04_03.jsonl
+2024-12-08 13:29:56,352 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2017\07\reddit_2017_07_27.jsonl
+2024-12-08 13:29:56,353 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\03\reddit_2018_03_03.jsonl
+2024-12-08 13:29:56,354 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\03\reddit_2018_03_16.jsonl
+2024-12-08 13:29:56,355 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\03\reddit_2018_03_22.jsonl
+2024-12-08 13:29:56,356 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\04\reddit_2018_04_05.jsonl
+2024-12-08 13:29:56,358 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\04\reddit_2018_04_30.jsonl
+2024-12-08 13:29:56,358 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\05\reddit_2018_05_26.jsonl
+2024-12-08 13:29:56,359 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\07\reddit_2018_07_03.jsonl
+2024-12-08 13:29:56,361 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\07\reddit_2018_07_22.jsonl
+2024-12-08 13:30:53,276 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\07\reddit_2018_07_29.jsonl
+2024-12-08 13:30:53,277 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\08\reddit_2018_08_18.jsonl
+2024-12-08 13:30:53,278 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\11\reddit_2018_11_30.jsonl
+2024-12-08 13:30:53,280 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\01\reddit_2019_01_02.jsonl
+2024-12-08 13:30:53,283 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\01\reddit_2019_01_21.jsonl
+2024-12-08 13:30:53,284 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\03\reddit_2019_03_05.jsonl
+2024-12-08 13:30:53,286 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\03\reddit_2019_03_11.jsonl
+2024-12-08 13:30:53,288 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\05\reddit_2019_05_15.jsonl
+2024-12-08 13:30:53,289 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\05\reddit_2019_05_28.jsonl
+2024-12-08 13:30:53,291 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\06\reddit_2019_06_03.jsonl
+2024-12-08 13:30:53,293 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\07\reddit_2019_07_24.jsonl
+2024-12-08 13:30:53,301 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\08\reddit_2019_08_13.jsonl
+2024-12-08 13:30:53,302 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\12\reddit_2019_12_01.jsonl
+2024-12-08 13:30:53,303 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\12\reddit_2019_12_20.jsonl
+2024-12-08 13:30:53,305 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\02\reddit_2020_02_19.jsonl
+2024-12-08 13:30:53,306 [WARNING] Verarbeite Post mit ID: f6e1gj
+2024-12-08 13:30:57,148 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\03\reddit_2020_03_01.jsonl
+2024-12-08 13:30:57,150 [WARNING] Verarbeite Post mit ID: fc0j8o
+2024-12-08 13:31:00,601 [WARNING] Verarbeite Post mit ID: fboymr
+2024-12-08 13:31:03,020 [WARNING] Verarbeite Post mit ID: fbpiqa
+2024-12-08 13:31:06,864 [WARNING] Verarbeite Post mit ID: fbre0j
+2024-12-08 13:31:09,776 [WARNING] Verarbeite Post mit ID: fbv1h8
+2024-12-08 13:31:13,108 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\03\reddit_2020_03_20.jsonl
+2024-12-08 13:31:13,109 [WARNING] Verarbeite Post mit ID: flsy8f
+2024-12-08 13:31:16,810 [WARNING] Verarbeite Post mit ID: fltjkr
+2024-12-08 13:31:19,730 [WARNING] Verarbeite Post mit ID: flvajo
+2024-12-08 13:31:22,956 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\06\reddit_2020_06_12.jsonl
+2024-12-08 13:31:22,957 [WARNING] Verarbeite Post mit ID: h79s96
+2024-12-08 13:31:26,395 [WARNING] Verarbeite Post mit ID: h7ogck
+2024-12-08 13:32:59,363 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2016\03\reddit_2016_03_31.jsonl
+2024-12-08 13:32:59,364 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2016\10\reddit_2016_10_31.jsonl
+2024-12-08 13:32:59,365 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2017\01\reddit_2017_01_11.jsonl
+2024-12-08 13:32:59,366 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2017\03\reddit_2017_03_14.jsonl
+2024-12-08 13:32:59,366 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2017\04\reddit_2017_04_03.jsonl
+2024-12-08 13:32:59,367 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2017\07\reddit_2017_07_27.jsonl
+2024-12-08 13:32:59,368 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\03\reddit_2018_03_03.jsonl
+2024-12-08 13:32:59,369 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\03\reddit_2018_03_16.jsonl
+2024-12-08 13:32:59,369 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\03\reddit_2018_03_22.jsonl
+2024-12-08 13:32:59,370 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\04\reddit_2018_04_05.jsonl
+2024-12-08 13:32:59,371 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\04\reddit_2018_04_30.jsonl
+2024-12-08 13:32:59,372 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\05\reddit_2018_05_26.jsonl
+2024-12-08 13:32:59,373 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\07\reddit_2018_07_03.jsonl
+2024-12-08 13:32:59,374 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\07\reddit_2018_07_22.jsonl
+2024-12-08 13:32:59,375 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\07\reddit_2018_07_29.jsonl
+2024-12-08 13:32:59,376 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\08\reddit_2018_08_18.jsonl
+2024-12-08 13:32:59,377 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\11\reddit_2018_11_30.jsonl
+2024-12-08 13:32:59,378 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\01\reddit_2019_01_02.jsonl
+2024-12-08 13:32:59,381 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\01\reddit_2019_01_21.jsonl
+2024-12-08 13:32:59,381 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\03\reddit_2019_03_05.jsonl
+2024-12-08 13:32:59,384 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\03\reddit_2019_03_11.jsonl
+2024-12-08 13:32:59,385 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\05\reddit_2019_05_15.jsonl
+2024-12-08 13:32:59,386 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\05\reddit_2019_05_28.jsonl
+2024-12-08 13:32:59,388 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\06\reddit_2019_06_03.jsonl
+2024-12-08 13:32:59,389 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\07\reddit_2019_07_24.jsonl
+2024-12-08 13:32:59,397 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\08\reddit_2019_08_13.jsonl
+2024-12-08 13:32:59,398 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\12\reddit_2019_12_01.jsonl
+2024-12-08 13:32:59,399 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\12\reddit_2019_12_20.jsonl
+2024-12-08 13:32:59,401 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\02\reddit_2020_02_19.jsonl
+2024-12-08 13:32:59,403 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\03\reddit_2020_03_01.jsonl
+2024-12-08 13:32:59,409 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\03\reddit_2020_03_20.jsonl
+2024-12-08 13:32:59,411 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\06\reddit_2020_06_12.jsonl
+2024-12-08 13:32:59,413 [WARNING] Verarbeite Post mit ID: h7ogck
+2024-12-08 13:33:01,839 [WARNING] Verarbeite Post mit ID: h7sszv
+2024-12-08 13:33:03,939 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\07\reddit_2020_07_01.jsonl
+2024-12-08 13:33:03,940 [WARNING] Verarbeite Post mit ID: hjax6r
+2024-12-08 13:33:07,068 [WARNING] Verarbeite Post mit ID: hjlf5x
+2024-12-08 13:33:10,093 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\07\reddit_2020_07_20.jsonl
+2024-12-08 13:33:10,096 [WARNING] Verarbeite Post mit ID: hurh39
+2024-12-08 13:33:11,416 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\07\reddit_2020_07_27.jsonl
+2024-12-08 13:33:11,418 [WARNING] Verarbeite Post mit ID: hyrq5p
+2024-12-08 13:33:13,868 [WARNING] Verarbeite Post mit ID: hyln18
+2024-12-08 13:33:17,707 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\09\reddit_2020_09_04.jsonl
+2024-12-08 13:33:17,707 [WARNING] Verarbeite Post mit ID: impqux
+2024-12-08 13:33:19,296 [WARNING] Verarbeite Post mit ID: imjehr
+2024-12-08 13:33:20,822 [WARNING] Verarbeite Post mit ID: imltig
+2024-12-08 13:33:23,245 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\09\reddit_2020_09_17.jsonl
+2024-12-08 13:33:23,251 [WARNING] Verarbeite Post mit ID: iunmw5
+2024-12-08 13:33:25,987 [WARNING] Verarbeite Post mit ID: iuon7q
+2024-12-08 13:33:29,121 [WARNING] Verarbeite Post mit ID: iuonvn
+2024-12-08 13:33:32,111 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\10\reddit_2020_10_07.jsonl
+2024-12-08 13:33:32,115 [WARNING] Verarbeite Post mit ID: j6qzyr
+2024-12-08 13:33:34,056 [WARNING] Verarbeite Post mit ID: j6qzyy
+2024-12-08 13:33:38,022 [WARNING] Verarbeite Post mit ID: j6rsu4
+2024-12-08 13:33:40,190 [WARNING] Verarbeite Post mit ID: j6wjjp
+2024-12-08 13:33:43,465 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\10\reddit_2020_10_26.jsonl
+2024-12-08 13:33:43,472 [WARNING] Verarbeite Post mit ID: jiekcc
+2024-12-08 13:33:45,976 [WARNING] Verarbeite Post mit ID: ji7n9u
+2024-12-08 13:33:49,554 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\11\reddit_2020_11_09.jsonl
+2024-12-08 13:33:49,555 [WARNING] Verarbeite Post mit ID: jqxik3
+2024-12-08 13:33:52,502 [WARNING] Verarbeite Post mit ID: jqndga
+2024-12-08 13:33:55,330 [WARNING] Verarbeite Post mit ID: jqtv9a
+2024-12-08 13:33:57,072 [WARNING] Verarbeite Post mit ID: jqyvq8
+2024-12-08 13:33:59,951 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\11\reddit_2020_11_28.jsonl
+2024-12-08 13:33:59,952 [WARNING] Verarbeite Post mit ID: k2pigi
+2024-12-08 13:34:03,722 [WARNING] Verarbeite Post mit ID: k2w14r
+2024-12-08 13:34:06,312 [WARNING] Verarbeite Post mit ID: k2pwzq
+2024-12-08 13:34:08,846 [WARNING] Verarbeite Post mit ID: k2nz8g
+2024-12-08 13:34:12,062 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\01\reddit_2021_01_06.jsonl
+2024-12-08 13:34:12,069 [WARNING] Verarbeite Post mit ID: krq92v
+2024-12-08 13:34:13,611 [WARNING] Verarbeite Post mit ID: krggts
+2024-12-08 13:34:16,513 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\02\reddit_2021_02_08.jsonl
+2024-12-08 13:34:16,517 [WARNING] Verarbeite Post mit ID: lfcaxa
+2024-12-08 13:34:19,219 [WARNING] Verarbeite Post mit ID: lfc6t3
+2024-12-08 13:34:21,726 [WARNING] Verarbeite Post mit ID: lf5wgk
+2024-12-08 13:34:24,006 [WARNING] Verarbeite Post mit ID: lf73yi
+2024-12-08 13:34:26,584 [WARNING] Verarbeite Post mit ID: lf8e91
+2024-12-08 13:34:29,057 [WARNING] Verarbeite Post mit ID: lfd75f
+2024-12-08 13:34:31,977 [WARNING] Verarbeite Post mit ID: lflycn
+2024-12-08 13:34:34,359 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\04\reddit_2021_04_11.jsonl
+2024-12-08 13:34:34,361 [WARNING] Verarbeite Post mit ID: mokpzx
+2024-12-08 13:34:36,708 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\04\reddit_2021_04_24.jsonl
+2024-12-08 13:34:36,710 [WARNING] Verarbeite Post mit ID: mxd1es
+2024-12-08 13:34:39,485 [WARNING] Verarbeite Post mit ID: mxw9x8
+2024-12-08 13:34:42,591 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\04\reddit_2021_04_30.jsonl
+2024-12-08 13:34:42,593 [WARNING] Verarbeite Post mit ID: n1ttf5
+2024-12-08 13:34:46,419 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\06\reddit_2021_06_01.jsonl
+2024-12-08 13:34:46,422 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\06\reddit_2021_06_20.jsonl
+2024-12-08 13:34:46,423 [WARNING] Verarbeite Post mit ID: o4cqxv
+2024-12-08 13:34:48,379 [WARNING] Verarbeite Post mit ID: o46lu2
+2024-12-08 13:34:51,173 [WARNING] Verarbeite Post mit ID: o49rck
+2024-12-08 13:34:54,034 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\07\reddit_2021_07_03.jsonl
+2024-12-08 13:34:54,036 [WARNING] Verarbeite Post mit ID: ocmslw
+2024-12-08 13:34:56,838 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\07\reddit_2021_07_16.jsonl
+2024-12-08 13:34:56,845 [WARNING] Verarbeite Post mit ID: ol5wu2
+2024-12-08 13:34:58,746 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\08\reddit_2021_08_30.jsonl
+2024-12-08 13:34:58,759 [WARNING] Verarbeite Post mit ID: peo1k7
+2024-12-08 13:35:00,623 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\09\reddit_2021_09_06.jsonl
+2024-12-08 13:35:00,625 [WARNING] Verarbeite Post mit ID: pj9s8t
+2024-12-08 13:35:04,282 [WARNING] Verarbeite Post mit ID: pitajz
+2024-12-08 13:35:05,973 [WARNING] Verarbeite Post mit ID: pisps3
+2024-12-08 13:35:08,281 [WARNING] Verarbeite Post mit ID: piyxt3
+2024-12-08 13:35:10,607 [WARNING] Verarbeite Post mit ID: piyxth
+2024-12-08 13:35:13,631 [WARNING] Verarbeite Post mit ID: pj790n
+2024-12-08 13:35:15,429 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\09\reddit_2021_09_12.jsonl
+2024-12-08 13:35:15,431 [WARNING] Verarbeite Post mit ID: pmrmx5
+2024-12-08 13:35:18,545 [WARNING] Verarbeite Post mit ID: pmxivj
+2024-12-08 13:35:21,240 [WARNING] Verarbeite Post mit ID: pmqf6z
+2024-12-08 13:35:23,660 [WARNING] Verarbeite Post mit ID: pmocph
+2024-12-08 13:35:25,726 [WARNING] Verarbeite Post mit ID: pmid3j
+2024-12-08 13:35:28,338 [WARNING] Verarbeite Post mit ID: pmsrh1
+2024-12-08 13:35:31,504 [WARNING] Verarbeite Post mit ID: pmxqpz
+2024-12-08 13:35:34,453 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\10\reddit_2021_10_02.jsonl
+2024-12-08 13:35:34,455 [WARNING] Verarbeite Post mit ID: pzxct3
+2024-12-08 13:35:37,064 [WARNING] Verarbeite Post mit ID: pzt131
+2024-12-08 13:35:39,651 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\10\reddit_2021_10_09.jsonl
+2024-12-08 13:35:39,652 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\10\reddit_2021_10_28.jsonl
+2024-12-08 13:35:39,653 [WARNING] Verarbeite Post mit ID: qhnn77
+2024-12-08 13:35:43,007 [WARNING] Verarbeite Post mit ID: qhpw5a
+2024-12-08 13:35:44,607 [WARNING] Verarbeite Post mit ID: qhvw96
+2024-12-08 13:35:46,515 [WARNING] Verarbeite Post mit ID: qhw10b
+2024-12-08 13:35:49,602 [WARNING] Verarbeite Post mit ID: qhb3bv
+2024-12-08 13:35:51,271 [WARNING] Verarbeite Post mit ID: qhkdkt
+2024-12-08 13:35:53,833 [WARNING] Verarbeite Post mit ID: qhthyi
+2024-12-08 13:35:55,446 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\11\reddit_2021_11_17.jsonl
+2024-12-08 13:35:55,448 [WARNING] Verarbeite Post mit ID: qvnvym
+2024-12-08 13:35:57,200 [WARNING] Verarbeite Post mit ID: qvocts
+2024-12-08 13:35:59,485 [WARNING] Verarbeite Post mit ID: qvxlci
+2024-12-08 13:36:02,121 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2022\01\reddit_2022_01_14.jsonl
+2024-12-08 13:36:02,126 [WARNING] Verarbeite Post mit ID: s41z4q
+2024-12-08 13:36:04,265 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2022\04\reddit_2022_04_06.jsonl
+2024-12-08 13:36:04,268 [WARNING] Verarbeite Post mit ID: txyym2
+2024-12-08 13:36:05,648 [WARNING] Verarbeite Post mit ID: txvb1s
+2024-12-08 13:36:08,088 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2022\04\reddit_2022_04_13.jsonl
+2024-12-08 13:36:08,092 [WARNING] Verarbeite Post mit ID: u2ilwp
+2024-12-08 13:36:11,789 [WARNING] Verarbeite Post mit ID: u2e7g8
+2024-12-08 13:36:14,871 [WARNING] Verarbeite Post mit ID: u2g53j
+2024-12-08 13:36:17,721 [WARNING] Verarbeite Post mit ID: u2orq3
+2024-12-08 13:36:20,600 [WARNING] Verarbeite Post mit ID: u2qk0p
+2024-12-08 13:36:23,380 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2022\07\reddit_2022_07_05.jsonl
+2024-12-08 13:36:23,382 [WARNING] Verarbeite Post mit ID: vrvjva
+2024-12-08 13:36:25,844 [WARNING] Verarbeite Post mit ID: vs52y0
+2024-12-08 13:36:28,583 [WARNING] Verarbeite Post mit ID: vrw284
+2024-12-08 13:36:30,997 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2022\07\reddit_2022_07_11.jsonl
+2024-12-08 13:36:30,999 [WARNING] Verarbeite Post mit ID: vwo2qw
+2024-12-08 13:36:32,985 [WARNING] Verarbeite Post mit ID: vwko5j
+2024-12-08 13:36:34,935 [WARNING] Verarbeite Post mit ID: vwltlq
+2024-12-08 13:36:38,198 [WARNING] Verarbeite Post mit ID: vwncl0
+2024-12-08 13:36:41,003 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2022\08\reddit_2022_08_26.jsonl
+2024-12-08 13:36:41,006 [WARNING] Verarbeite Post mit ID: wya2w4
+2024-12-08 13:36:43,838 [WARNING] Verarbeite Post mit ID: wyku40
+2024-12-08 13:36:46,190 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2022\09\reddit_2022_09_01.jsonl
+2024-12-08 13:36:46,195 [WARNING] Verarbeite Post mit ID: x39bs8
+2024-12-08 13:36:49,532 [WARNING] Verarbeite Post mit ID: x3hmi3
+2024-12-08 13:36:51,949 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2022\10\reddit_2022_10_04.jsonl
+2024-12-08 13:36:51,952 [WARNING] Verarbeite Post mit ID: xvj60x
+2024-12-08 13:36:54,084 [WARNING] Verarbeite Post mit ID: xvout8
+2024-12-08 13:36:56,451 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2022\10\reddit_2022_10_17.jsonl
+2024-12-08 13:36:56,453 [WARNING] Verarbeite Post mit ID: y5yega
+2024-12-08 13:36:59,573 [WARNING] Verarbeite Post mit ID: y63jpd
+2024-12-08 13:37:02,741 [WARNING] Verarbeite Post mit ID: y6ama6
+2024-12-08 13:37:05,011 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2022\11\reddit_2022_11_19.jsonl
+2024-12-08 13:37:05,011 [WARNING] Verarbeite Post mit ID: yz0lca
+2024-12-08 13:37:07,999 [WARNING] Verarbeite Post mit ID: yz1qxc
+2024-12-08 13:37:10,259 [WARNING] Verarbeite Post mit ID: yzahl3
+2024-12-08 13:37:13,340 [WARNING] Verarbeite Post mit ID: yzijxf
+2024-12-08 13:37:16,088 [WARNING] Verarbeite Post mit ID: yzmiox
+2024-12-08 13:37:18,565 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2023\01\reddit_2023_01_03.jsonl
+2024-12-08 13:37:18,569 [WARNING] Verarbeite Post mit ID: 102ba1b
+2024-12-08 13:37:20,687 [WARNING] Verarbeite Post mit ID: 102ex8d
+2024-12-08 13:37:23,246 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2023\01\reddit_2023_01_16.jsonl
+2024-12-08 13:37:23,247 [WARNING] Verarbeite Post mit ID: 10ddms1
+2024-12-08 13:37:25,991 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2023\04\reddit_2023_04_08.jsonl
+2024-12-08 13:37:25,991 [WARNING] Verarbeite Post mit ID: 12f850u
+2024-12-08 13:37:28,312 [WARNING] Verarbeite Post mit ID: 12fx3mg
+2024-12-08 13:37:30,242 [WARNING] Verarbeite Post mit ID: 12fpkil
+2024-12-08 13:37:32,340 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2023\06\reddit_2023_06_11.jsonl
+2024-12-08 13:37:32,349 [WARNING] Verarbeite Post mit ID: 14741ez
+2024-12-08 13:37:33,886 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2023\10\reddit_2023_10_12.jsonl
+2024-12-08 13:37:33,887 [WARNING] Verarbeite Post mit ID: 17660h7
+2024-12-08 13:37:35,778 [WARNING] Verarbeite Post mit ID: 176buxf
+2024-12-08 13:37:38,520 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2023\10\reddit_2023_10_19.jsonl
+2024-12-08 13:37:38,521 [WARNING] Verarbeite Post mit ID: 17b9hq2
+2024-12-08 13:37:41,715 [WARNING] Verarbeite Post mit ID: 17bn1kd
+2024-12-08 13:37:43,926 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2023\11\reddit_2023_11_08.jsonl
+2024-12-08 13:37:43,929 [WARNING] Verarbeite Post mit ID: 17qioac
+2024-12-08 13:37:46,175 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2023\12\reddit_2023_12_16.jsonl
+2024-12-08 13:37:46,177 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2024\01\reddit_2024_01_05.jsonl
+2024-12-08 13:37:46,181 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2024\03\reddit_2024_03_09.jsonl
+2024-12-08 13:37:46,183 [WARNING] Verarbeite Post mit ID: 1ba8ehi
+2024-12-08 13:37:48,647 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2024\03\reddit_2024_03_28.jsonl
+2024-12-08 13:37:48,649 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2024\07\reddit_2024_07_21.jsonl
+2024-12-08 13:37:48,651 [WARNING] Verarbeite Post mit ID: 1e8nhi3
+2024-12-08 13:37:51,473 [WARNING] Verarbeite Post mit ID: 1e89esc
+2024-12-08 13:37:54,344 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2024\08\reddit_2024_08_10.jsonl
+2024-12-08 13:37:54,347 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2024\10\reddit_2024_10_01.jsonl
+2024-12-08 13:37:54,349 [WARNING] Verarbeite Post mit ID: 1ftwhxc
+2024-12-08 13:37:57,500 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2024\10\reddit_2024_10_08.jsonl
+2024-12-08 13:37:57,503 [WARNING] Verarbeite Post mit ID: 1fz93kc
+2024-12-08 13:37:59,440 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2024\10\reddit_2024_10_14.jsonl
+2024-12-08 13:37:59,444 [WARNING] Verarbeite Post mit ID: 1g3ml1h
+2024-12-08 13:38:02,308 [WARNING] Verarbeite Post mit ID: 1g3jqye
+2024-12-08 13:38:05,389 [WARNING] Verarbeite Post mit ID: 1g35k4y
+2024-12-08 13:38:08,896 [WARNING] Verarbeite Post mit ID: 1g3keud
+2024-12-08 13:40:10,032 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2016\03\reddit_2016_03_31.jsonl
+2024-12-08 13:40:10,033 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2016\10\reddit_2016_10_31.jsonl
+2024-12-08 13:40:10,033 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2017\01\reddit_2017_01_11.jsonl
+2024-12-08 13:40:10,033 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2017\03\reddit_2017_03_14.jsonl
+2024-12-08 13:40:10,035 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2017\04\reddit_2017_04_03.jsonl
+2024-12-08 13:40:10,036 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2017\07\reddit_2017_07_27.jsonl
+2024-12-08 13:40:10,037 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\03\reddit_2018_03_03.jsonl
+2024-12-08 13:40:10,037 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\03\reddit_2018_03_16.jsonl
+2024-12-08 13:40:10,038 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\03\reddit_2018_03_22.jsonl
+2024-12-08 13:40:10,039 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\04\reddit_2018_04_05.jsonl
+2024-12-08 13:40:10,040 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\04\reddit_2018_04_30.jsonl
+2024-12-08 13:40:10,041 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\05\reddit_2018_05_26.jsonl
+2024-12-08 13:40:10,041 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\07\reddit_2018_07_03.jsonl
+2024-12-08 13:40:10,042 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\07\reddit_2018_07_22.jsonl
+2024-12-08 13:40:10,044 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\07\reddit_2018_07_29.jsonl
+2024-12-08 13:40:10,045 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\08\reddit_2018_08_18.jsonl
+2024-12-08 13:40:10,046 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\11\reddit_2018_11_30.jsonl
+2024-12-08 13:40:10,046 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\01\reddit_2019_01_02.jsonl
+2024-12-08 13:40:10,049 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\01\reddit_2019_01_21.jsonl
+2024-12-08 13:40:10,050 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\03\reddit_2019_03_05.jsonl
+2024-12-08 13:40:10,052 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\03\reddit_2019_03_11.jsonl
+2024-12-08 13:40:10,053 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\05\reddit_2019_05_15.jsonl
+2024-12-08 13:40:10,054 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\05\reddit_2019_05_28.jsonl
+2024-12-08 13:40:10,055 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\06\reddit_2019_06_03.jsonl
+2024-12-08 13:40:10,057 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\07\reddit_2019_07_24.jsonl
+2024-12-08 13:40:10,059 [WARNING] Verarbeite Post mit ID: ch5un5
+2024-12-08 13:40:29,330 [WARNING] Verarbeite Post mit ID: chcrsz
+2024-12-08 13:40:49,473 [WARNING] Verarbeite Post mit ID: chcx3a
+2024-12-08 13:41:48,560 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\08\reddit_2019_08_13.jsonl
+2024-12-08 13:41:48,561 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\12\reddit_2019_12_01.jsonl
+2024-12-08 13:41:48,562 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\12\reddit_2019_12_20.jsonl
+2024-12-08 13:41:48,564 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\02\reddit_2020_02_19.jsonl
+2024-12-08 13:41:48,566 [WARNING] Verarbeite Post mit ID: f67qmy
+2024-12-08 13:42:11,059 [WARNING] Verarbeite Post mit ID: f6jp3w
+2024-12-08 13:42:24,303 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\03\reddit_2020_03_01.jsonl
+2024-12-08 13:42:24,307 [WARNING] Verarbeite Post mit ID: fc19iz
+2024-12-08 13:42:44,460 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\03\reddit_2020_03_20.jsonl
+2024-12-08 13:42:44,463 [WARNING] Verarbeite Post mit ID: flreib
+2024-12-08 13:42:56,786 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\06\reddit_2020_06_12.jsonl
+2024-12-08 13:42:56,788 [WARNING] Verarbeite Post mit ID: h7mp3d
+2024-12-08 13:43:11,424 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\07\reddit_2020_07_01.jsonl
+2024-12-08 13:43:11,427 [WARNING] Verarbeite Post mit ID: hjbbv7
+2024-12-08 13:43:31,144 [WARNING] Verarbeite Post mit ID: hj6865
+2024-12-08 13:44:10,377 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2016\03\reddit_2016_03_31.jsonl
+2024-12-08 13:44:10,378 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2016\10\reddit_2016_10_31.jsonl
+2024-12-08 13:44:10,378 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2017\01\reddit_2017_01_11.jsonl
+2024-12-08 13:44:10,379 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2017\03\reddit_2017_03_14.jsonl
+2024-12-08 13:44:10,380 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2017\04\reddit_2017_04_03.jsonl
+2024-12-08 13:44:10,380 [WARNING] Verarbeite Post mit ID: 63886g
+2024-12-08 13:44:16,193 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2017\07\reddit_2017_07_27.jsonl
+2024-12-08 13:44:16,194 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\03\reddit_2018_03_03.jsonl
+2024-12-08 13:44:16,195 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\03\reddit_2018_03_16.jsonl
+2024-12-08 13:44:16,195 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\03\reddit_2018_03_22.jsonl
+2024-12-08 13:44:16,196 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\04\reddit_2018_04_05.jsonl
+2024-12-08 13:44:16,197 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\04\reddit_2018_04_30.jsonl
+2024-12-08 13:44:16,198 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\05\reddit_2018_05_26.jsonl
+2024-12-08 13:44:16,199 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\07\reddit_2018_07_03.jsonl
+2024-12-08 13:44:16,200 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\07\reddit_2018_07_22.jsonl
+2024-12-08 13:44:16,200 [WARNING] Verarbeite Post mit ID: 90ydxe
+2024-12-08 13:44:22,469 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\07\reddit_2018_07_29.jsonl
+2024-12-08 13:44:22,470 [WARNING] Verarbeite Post mit ID: 92x88x
+2024-12-08 13:44:28,759 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\08\reddit_2018_08_18.jsonl
+2024-12-08 13:44:28,760 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2018\11\reddit_2018_11_30.jsonl
+2024-12-08 13:44:28,761 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\01\reddit_2019_01_02.jsonl
+2024-12-08 13:44:28,763 [WARNING] Verarbeite Post mit ID: aby862
+2024-12-08 13:44:35,535 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\01\reddit_2019_01_21.jsonl
+2024-12-08 13:44:35,535 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\03\reddit_2019_03_05.jsonl
+2024-12-08 13:44:35,537 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\03\reddit_2019_03_11.jsonl
+2024-12-08 13:44:35,538 [WARNING] Verarbeite Post mit ID: azo3vp
+2024-12-08 13:44:44,483 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\05\reddit_2019_05_15.jsonl
+2024-12-08 13:44:44,486 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\05\reddit_2019_05_28.jsonl
+2024-12-08 13:44:44,486 [WARNING] Verarbeite Post mit ID: btxqy1
+2024-12-08 13:44:50,290 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\06\reddit_2019_06_03.jsonl
+2024-12-08 13:44:50,291 [WARNING] Verarbeite Post mit ID: bw8jm8
+2024-12-08 13:44:59,714 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\07\reddit_2019_07_24.jsonl
+2024-12-08 13:44:59,716 [WARNING] Verarbeite Post mit ID: chdrla
+2024-12-08 13:45:07,468 [WARNING] Verarbeite Post mit ID: ch7lmu
+2024-12-08 13:45:14,180 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\08\reddit_2019_08_13.jsonl
+2024-12-08 13:45:14,181 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\12\reddit_2019_12_01.jsonl
+2024-12-08 13:45:14,181 [WARNING] Verarbeite Post mit ID: e4j55y
+2024-12-08 13:45:25,266 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2019\12\reddit_2019_12_20.jsonl
+2024-12-08 13:45:25,267 [WARNING] Verarbeite Post mit ID: ed7si7
+2024-12-08 13:45:33,379 [WARNING] Verarbeite Post mit ID: ed9lkc
+2024-12-08 13:45:40,233 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\02\reddit_2020_02_19.jsonl
+2024-12-08 13:45:40,235 [WARNING] Verarbeite Post mit ID: f6612r
+2024-12-08 13:45:44,539 [WARNING] Verarbeite Post mit ID: f6bwhb
+2024-12-08 13:45:48,969 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\03\reddit_2020_03_01.jsonl
+2024-12-08 13:45:48,970 [WARNING] Verarbeite Post mit ID: fbr4di
+2024-12-08 13:45:57,126 [WARNING] Verarbeite Post mit ID: fbqmci
+2024-12-08 13:46:01,338 [WARNING] Verarbeite Post mit ID: fc0re9
+2024-12-08 13:46:06,715 [WARNING] Verarbeite Post mit ID: fc2e5u
+2024-12-08 13:46:12,645 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\03\reddit_2020_03_20.jsonl
+2024-12-08 13:46:12,646 [WARNING] Verarbeite Post mit ID: flm21j
+2024-12-08 13:46:22,713 [WARNING] Verarbeite Post mit ID: fm1qlp
+2024-12-08 13:46:28,052 [WARNING] Verarbeite Post mit ID: flrbav
+2024-12-08 13:46:33,387 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\06\reddit_2020_06_12.jsonl
+2024-12-08 13:46:33,388 [WARNING] Verarbeite Post mit ID: h7ajj5
+2024-12-08 13:46:41,495 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\07\reddit_2020_07_01.jsonl
+2024-12-08 13:46:41,496 [WARNING] Verarbeite Post mit ID: hj63kf
+2024-12-08 13:46:45,813 [WARNING] Verarbeite Post mit ID: hj0aa1
+2024-12-08 13:46:49,815 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\07\reddit_2020_07_20.jsonl
+2024-12-08 13:46:49,817 [WARNING] Verarbeite Post mit ID: hucfv1
+2024-12-08 13:47:02,769 [WARNING] Verarbeite Post mit ID: huhi5x
+2024-12-08 13:47:06,594 [WARNING] Verarbeite Post mit ID: hum7yz
+2024-12-08 13:47:16,373 [WARNING] Verarbeite Post mit ID: humn76
+2024-12-08 13:47:27,284 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\07\reddit_2020_07_27.jsonl
+2024-12-08 13:47:27,285 [WARNING] Verarbeite Post mit ID: hylqhs
+2024-12-08 13:47:37,534 [WARNING] Verarbeite Post mit ID: hyv5n5
+2024-12-08 13:47:50,645 [WARNING] Verarbeite Post mit ID: hyo66t
+2024-12-08 13:47:54,897 [WARNING] Verarbeite Post mit ID: hysa13
+2024-12-08 13:47:59,981 [WARNING] Verarbeite Post mit ID: hysmc2
+2024-12-08 13:48:04,373 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\09\reddit_2020_09_04.jsonl
+2024-12-08 13:48:04,373 [WARNING] Verarbeite Post mit ID: ime23s
+2024-12-08 13:48:10,646 [WARNING] Verarbeite Post mit ID: ime8t8
+2024-12-08 13:48:13,909 [WARNING] Verarbeite Post mit ID: imp2mh
+2024-12-08 13:48:17,169 [WARNING] Verarbeite Post mit ID: imhz9k
+2024-12-08 13:48:28,204 [WARNING] Verarbeite Post mit ID: imooxk
+2024-12-08 13:48:33,048 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\09\reddit_2020_09_17.jsonl
+2024-12-08 13:48:33,049 [WARNING] Verarbeite Post mit ID: iuf66y
+2024-12-08 13:48:40,304 [WARNING] Verarbeite Post mit ID: iui7gy
+2024-12-08 13:48:43,770 [WARNING] Verarbeite Post mit ID: iukonj
+2024-12-08 13:48:51,170 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\10\reddit_2020_10_07.jsonl
+2024-12-08 13:48:51,170 [WARNING] Verarbeite Post mit ID: j6n06u
+2024-12-08 13:48:58,158 [WARNING] Verarbeite Post mit ID: j6p6aq
+2024-12-08 13:49:02,163 [WARNING] Verarbeite Post mit ID: j6vu2f
+2024-12-08 13:49:08,183 [WARNING] Verarbeite Post mit ID: j6ioot
+2024-12-08 13:49:12,781 [WARNING] Verarbeite Post mit ID: j6qkuv
+2024-12-08 13:49:17,902 [WARNING] Verarbeite Post mit ID: j70zqa
+2024-12-08 13:49:22,560 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\10\reddit_2020_10_26.jsonl
+2024-12-08 13:49:22,563 [WARNING] Verarbeite Post mit ID: jiaoqf
+2024-12-08 13:49:29,526 [WARNING] Verarbeite Post mit ID: jig1u7
+2024-12-08 13:49:41,545 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\11\reddit_2020_11_09.jsonl
+2024-12-08 13:49:41,546 [WARNING] Verarbeite Post mit ID: jqp8r0
+2024-12-08 13:49:55,332 [WARNING] Verarbeite Post mit ID: jqwoh4
+2024-12-08 13:49:59,476 [WARNING] Verarbeite Post mit ID: jqwap3
+2024-12-08 13:50:04,399 [WARNING] Verarbeite Post mit ID: jqwpkr
+2024-12-08 13:50:13,831 [WARNING] Verarbeite Post mit ID: jqz1vj
+2024-12-08 13:50:19,528 [WARNING] Verarbeite Post mit ID: jr3ocq
+2024-12-08 13:50:25,928 [WARNING] Verarbeite Post mit ID: jqwbdl
+2024-12-08 13:50:32,193 [WARNING] Verarbeite Post mit ID: jqxxag
+2024-12-08 13:50:37,319 [WARNING] Verarbeite Post mit ID: jr7ktq
+2024-12-08 13:50:40,833 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2020\11\reddit_2020_11_28.jsonl
+2024-12-08 13:50:40,835 [WARNING] Verarbeite Post mit ID: k2wtmi
+2024-12-08 13:50:44,859 [WARNING] Verarbeite Post mit ID: k2xt1y
+2024-12-08 13:50:50,086 [WARNING] Verarbeite Post mit ID: k2nwq0
+2024-12-08 13:50:55,048 [WARNING] Verarbeite Post mit ID: k2u9fj
+2024-12-08 13:51:00,080 [WARNING] Verarbeite Post mit ID: k2ue77
+2024-12-08 13:51:04,584 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\01\reddit_2021_01_06.jsonl
+2024-12-08 13:51:04,584 [WARNING] Verarbeite Post mit ID: krra4x
+2024-12-08 13:51:09,146 [WARNING] Verarbeite Post mit ID: krj18q
+2024-12-08 13:51:14,852 [WARNING] Verarbeite Post mit ID: krrpd7
+2024-12-08 13:51:26,224 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\02\reddit_2021_02_08.jsonl
+2024-12-08 13:51:26,229 [WARNING] Verarbeite Post mit ID: lf15za
+2024-12-08 13:51:30,823 [WARNING] Verarbeite Post mit ID: lf6iw5
+2024-12-08 13:51:34,425 [WARNING] Verarbeite Post mit ID: lfgl6k
+2024-12-08 13:51:41,122 [WARNING] Verarbeite Post mit ID: lfb3p8
+2024-12-08 13:51:46,853 [WARNING] Verarbeite Post mit ID: lfba27
+2024-12-08 13:51:50,696 [WARNING] Verarbeite Post mit ID: lezsok
+2024-12-08 13:51:53,856 [WARNING] Verarbeite Post mit ID: lf023x
+2024-12-08 13:52:00,157 [WARNING] Verarbeite Post mit ID: lf7u22
+2024-12-08 13:52:03,651 [WARNING] Verarbeite Post mit ID: lfaapa
+2024-12-08 13:52:09,576 [WARNING] Verarbeite Post mit ID: lfb2w4
+2024-12-08 13:52:13,730 [WARNING] Verarbeite Post mit ID: lfcpce
+2024-12-08 13:52:19,041 [WARNING] Verarbeite Post mit ID: lfdy2w
+2024-12-08 13:52:22,392 [WARNING] Verarbeite Post mit ID: lffnz6
+2024-12-08 13:52:25,252 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\04\reddit_2021_04_11.jsonl
+2024-12-08 13:52:25,252 [WARNING] Verarbeite Post mit ID: mota2g
+2024-12-08 13:52:32,333 [WARNING] Verarbeite Post mit ID: moy4cw
+2024-12-08 13:52:35,753 [WARNING] Verarbeite Post mit ID: moz0g6
+2024-12-08 13:52:38,612 [WARNING] Verarbeite Post mit ID: mol6ms
+2024-12-08 13:52:46,638 [WARNING] Verarbeite Post mit ID: moxy3m
+2024-12-08 13:52:53,656 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\04\reddit_2021_04_24.jsonl
+2024-12-08 13:52:53,657 [WARNING] Verarbeite Post mit ID: mxvt9g
+2024-12-08 13:52:58,738 [WARNING] Verarbeite Post mit ID: mxcokd
+2024-12-08 13:53:02,193 [WARNING] Verarbeite Post mit ID: mxkg1v
+2024-12-08 13:53:09,666 [WARNING] Verarbeite Post mit ID: mxqn2b
+2024-12-08 13:53:17,968 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\04\reddit_2021_04_30.jsonl
+2024-12-08 13:53:17,969 [WARNING] Verarbeite Post mit ID: n1sr08
+2024-12-08 13:53:23,798 [WARNING] Verarbeite Post mit ID: n1mqdf
+2024-12-08 13:53:34,224 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\06\reddit_2021_06_01.jsonl
+2024-12-08 13:53:34,230 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\06\reddit_2021_06_20.jsonl
+2024-12-08 13:53:34,231 [WARNING] Verarbeite Post mit ID: o47os2
+2024-12-08 13:53:39,782 [WARNING] Verarbeite Post mit ID: o45oso
+2024-12-08 13:53:43,369 [WARNING] Verarbeite Post mit ID: o4deei
+2024-12-08 13:53:50,697 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\07\reddit_2021_07_03.jsonl
+2024-12-08 13:53:50,697 [WARNING] Verarbeite Post mit ID: ocnq2b
+2024-12-08 13:53:53,455 [WARNING] Verarbeite Post mit ID: od97ek
+2024-12-08 13:54:00,629 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\07\reddit_2021_07_16.jsonl
+2024-12-08 13:54:00,630 [WARNING] Verarbeite Post mit ID: ol9zlc
+2024-12-08 13:54:03,836 [WARNING] Verarbeite Post mit ID: olpgwk
+2024-12-08 13:54:08,298 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\08\reddit_2021_08_30.jsonl
+2024-12-08 13:54:08,300 [WARNING] Verarbeite Post mit ID: pe7f31
+2024-12-08 13:54:13,503 [WARNING] Verarbeite Post mit ID: pejbot
+2024-12-08 13:54:21,737 [WARNING] Verarbeite Post mit ID: pes6qt
+2024-12-08 13:54:28,341 [WARNING] Verarbeite Post mit ID: pebdg2
+2024-12-08 13:54:33,884 [WARNING] Verarbeite Post mit ID: pe75xi
+2024-12-08 13:54:37,690 [WARNING] Verarbeite Post mit ID: peqdo4
+2024-12-08 13:54:42,483 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\09\reddit_2021_09_06.jsonl
+2024-12-08 13:54:42,485 [WARNING] Verarbeite Post mit ID: pixurk
+2024-12-08 13:54:47,040 [WARNING] Verarbeite Post mit ID: pips17
+2024-12-08 13:54:52,657 [WARNING] Verarbeite Post mit ID: pitv30
+2024-12-08 13:54:57,231 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\09\reddit_2021_09_12.jsonl
+2024-12-08 13:54:57,234 [WARNING] Verarbeite Post mit ID: pmvvu1
+2024-12-08 13:55:01,786 [WARNING] Verarbeite Post mit ID: pmjvob
+2024-12-08 13:55:05,019 [WARNING] Verarbeite Post mit ID: pmlgli
+2024-12-08 13:55:10,200 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\10\reddit_2021_10_02.jsonl
+2024-12-08 13:55:10,202 [WARNING] Verarbeite Post mit ID: q056if
+2024-12-08 13:55:13,947 [WARNING] Verarbeite Post mit ID: pzorc6
+2024-12-08 13:55:17,446 [WARNING] Verarbeite Post mit ID: q01o9m
+2024-12-08 13:55:22,646 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\10\reddit_2021_10_09.jsonl
+2024-12-08 13:55:22,647 [WARNING] Verarbeite Post mit ID: q4bu5j
+2024-12-08 13:55:27,071 [WARNING] Verarbeite Post mit ID: q4vnrp
+2024-12-08 13:55:32,875 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\10\reddit_2021_10_28.jsonl
+2024-12-08 13:55:32,877 [WARNING] Verarbeite Post mit ID: qhrlmd
+2024-12-08 13:55:37,115 [WARNING] Verarbeite Post mit ID: qhvgrf
+2024-12-08 13:55:44,082 [WARNING] Verarbeite Post mit ID: qhfelr
+2024-12-08 13:55:54,355 [WARNING] Verarbeite Post mit ID: qhob51
+2024-12-08 13:55:59,228 [WARNING] Verarbeite Post mit ID: qhtv05
+2024-12-08 13:56:02,461 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2021\11\reddit_2021_11_17.jsonl
+2024-12-08 13:56:02,461 [WARNING] Verarbeite Post mit ID: qvnceg
+2024-12-08 13:56:10,319 [WARNING] Verarbeite Post mit ID: qw3pzt
+2024-12-08 13:56:15,787 [WARNING] Verarbeite Post mit ID: qvta30
+2024-12-08 13:56:19,662 [WARNING] Verarbeite Post mit ID: qw9gzs
+2024-12-08 13:56:24,695 [WARNING] Verarbeite Post mit ID: qvo2v1
+2024-12-08 13:56:30,721 [WARNING] Verarbeite Post mit ID: qw3wyn
+2024-12-08 13:56:33,893 [WARNING] Verarbeite Post mit ID: qw4dbk
+2024-12-08 13:56:38,108 [WARNING] Verarbeite Post mit ID: qw9gu6
+2024-12-08 13:56:41,021 [WARNING] Verarbeite Post mit ID: qw9w1b
+2024-12-08 13:56:50,624 [WARNING] Verarbeite Post mit ID: qwc4hp
+2024-12-08 13:56:54,746 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2022\01\reddit_2022_01_14.jsonl
+2024-12-08 13:56:54,749 [WARNING] Verarbeite Post mit ID: s3xhzn
+2024-12-08 13:56:59,380 [WARNING] Verarbeite Post mit ID: s3kzqw
+2024-12-08 13:57:07,049 [WARNING] Verarbeite Post mit ID: s3y1s6
+2024-12-08 13:57:11,046 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2022\04\reddit_2022_04_06.jsonl
+2024-12-08 13:57:11,050 [WARNING] Verarbeite Post mit ID: txpf2u
+2024-12-08 13:57:14,527 [WARNING] Verarbeite Post mit ID: txedwj
+2024-12-08 13:57:18,875 [WARNING] Verarbeite Post mit ID: tx8xhp
+2024-12-08 13:57:23,793 [WARNING] Verarbeite Post mit ID: txw8yk
+2024-12-08 13:57:28,926 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2022\04\reddit_2022_04_13.jsonl
+2024-12-08 13:57:28,927 [WARNING] Verarbeite Post mit ID: u2ep2q
+2024-12-08 13:57:34,437 [WARNING] Verarbeite Post mit ID: u2hdf7
+2024-12-08 13:57:40,489 [WARNING] Verarbeite Post mit ID: u2i2fu
+2024-12-08 13:57:43,257 [WARNING] Verarbeite Post mit ID: u2ryuy
+2024-12-08 13:57:47,314 [WARNING] Verarbeite Post mit ID: u2za3n
+2024-12-08 13:57:49,831 [WARNING] Verarbeite Post mit ID: u2erj4
+2024-12-08 13:57:56,833 [WARNING] Verarbeite Post mit ID: u33mfi
+2024-12-08 13:58:01,887 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2022\07\reddit_2022_07_05.jsonl
+2024-12-08 13:58:01,887 [WARNING] Verarbeite Post mit ID: vrwvcc
+2024-12-08 13:58:08,551 [WARNING] Verarbeite Post mit ID: vrp94c
+2024-12-08 13:58:18,161 [WARNING] Verarbeite Post mit ID: vs1de3
+2024-12-08 13:58:21,059 [WARNING] Verarbeite Post mit ID: vrtywk
+2024-12-08 13:58:24,784 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2022\07\reddit_2022_07_11.jsonl
+2024-12-08 13:58:24,785 [WARNING] Verarbeite Post mit ID: vwfltk
+2024-12-08 13:58:32,025 [WARNING] Verarbeite Post mit ID: vwmwrl
+2024-12-08 13:58:39,443 [WARNING] Verarbeite Post mit ID: vwtore
+2024-12-08 13:58:42,004 [WARNING] Verarbeite Post mit ID: vw6uqs
+2024-12-08 13:58:45,772 [WARNING] Verarbeite Post mit ID: vw7sc0
+2024-12-08 13:58:50,147 [WARNING] Verarbeite Post mit ID: vw7ygc
+2024-12-08 13:58:59,213 [WARNING] Verarbeite Post mit ID: vwoov5
+2024-12-08 13:59:03,548 [WARNING] Verarbeite Post mit ID: vwtuxv
+2024-12-08 13:59:07,166 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2022\08\reddit_2022_08_26.jsonl
+2024-12-08 13:59:07,170 [WARNING] Verarbeite Post mit ID: wyaa5o
+2024-12-08 13:59:10,201 [WARNING] Verarbeite Post mit ID: wyjs3n
+2024-12-08 13:59:12,988 [WARNING] Verarbeite Post mit ID: wxud0r
+2024-12-08 13:59:17,234 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2022\09\reddit_2022_09_01.jsonl
+2024-12-08 13:59:17,235 [WARNING] Verarbeite Post mit ID: x3iogf
+2024-12-08 13:59:21,231 [WARNING] Verarbeite Post mit ID: x2vsk0
+2024-12-08 13:59:26,338 [WARNING] Verarbeite Post mit ID: x35t0z
+2024-12-08 13:59:34,239 [WARNING] Verarbeite Post mit ID: x3at6w
+2024-12-08 13:59:36,916 [WARNING] Verarbeite Post mit ID: x3h6mv
+2024-12-08 13:59:43,064 [WARNING] Verarbeite Post mit ID: x34dxn
+2024-12-08 13:59:47,284 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2022\10\reddit_2022_10_04.jsonl
+2024-12-08 13:59:47,285 [WARNING] Verarbeite Post mit ID: xv06i6
+2024-12-08 13:59:50,830 [WARNING] Verarbeite Post mit ID: xvomuj
+2024-12-08 13:59:59,560 [WARNING] Verarbeite Post mit ID: xvlbeq
+2024-12-08 14:00:04,110 [WARNING] Verarbeite Post mit ID: xvucr6
+2024-12-08 14:00:09,946 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2022\10\reddit_2022_10_17.jsonl
+2024-12-08 14:00:09,947 [WARNING] Verarbeite Post mit ID: y5zei2
+2024-12-08 14:00:15,110 [WARNING] Verarbeite Post mit ID: y6f5nr
+2024-12-08 14:00:18,957 [WARNING] Verarbeite Post mit ID: y6eqq0
+2024-12-08 14:00:22,269 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2022\11\reddit_2022_11_19.jsonl
+2024-12-08 14:00:22,270 [WARNING] Verarbeite Post mit ID: yz7gmh
+2024-12-08 14:00:26,254 [WARNING] Verarbeite Post mit ID: yzby1e
+2024-12-08 14:00:36,531 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2023\01\reddit_2023_01_03.jsonl
+2024-12-08 14:00:36,532 [WARNING] Verarbeite Post mit ID: 1027i7o
+2024-12-08 14:00:39,887 [WARNING] Verarbeite Post mit ID: 102gntl
+2024-12-08 14:00:45,648 [WARNING] Verarbeite Post mit ID: 101sd9u
+2024-12-08 14:00:47,507 [WARNING] Verarbeite Post mit ID: 102dbdn
+2024-12-08 14:00:55,872 [WARNING] Verarbeite Post mit ID: 102eta0
+2024-12-08 14:01:04,488 [WARNING] Verarbeite Post mit ID: 102h3jd
+2024-12-08 14:01:07,744 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2023\01\reddit_2023_01_16.jsonl
+2024-12-08 14:01:07,746 [WARNING] Verarbeite Post mit ID: 10dk139
+2024-12-08 14:01:15,711 [WARNING] Verarbeite Post mit ID: 10d7ta6
+2024-12-08 14:01:22,706 [WARNING] Verarbeite Post mit ID: 10dw0ls
+2024-12-08 14:01:29,025 [WARNING] Verarbeite Post mit ID: 10d2lc8
+2024-12-08 14:01:38,687 [WARNING] Verarbeite Post mit ID: 10d6oyl
+2024-12-08 14:01:42,867 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2023\04\reddit_2023_04_08.jsonl
+2024-12-08 14:01:42,868 [WARNING] Verarbeite Post mit ID: 12fktp3
+2024-12-08 14:01:51,345 [WARNING] Verarbeite Post mit ID: 12fnz2b
+2024-12-08 14:01:59,287 [WARNING] Verarbeite Post mit ID: 12fvejs
+2024-12-08 14:02:04,825 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2023\06\reddit_2023_06_11.jsonl
+2024-12-08 14:02:04,826 [WARNING] Verarbeite Post mit ID: 146z141
+2024-12-08 14:02:14,092 [WARNING] Verarbeite Post mit ID: 146p6sv
+2024-12-08 14:02:18,209 [WARNING] Verarbeite Post mit ID: 146t2ff
+2024-12-08 14:02:25,928 [WARNING] Verarbeite Post mit ID: 1478sa8
+2024-12-08 14:02:29,611 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2023\10\reddit_2023_10_12.jsonl
+2024-12-08 14:02:29,612 [WARNING] Verarbeite Post mit ID: 1767ges
+2024-12-08 14:02:34,415 [WARNING] Verarbeite Post mit ID: 175w19d
+2024-12-08 14:02:43,088 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2023\10\reddit_2023_10_19.jsonl
+2024-12-08 14:02:43,089 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2023\11\reddit_2023_11_08.jsonl
+2024-12-08 14:02:43,089 [WARNING] Verarbeite Post mit ID: 17qq517
+2024-12-08 14:02:47,347 [WARNING] Verarbeite Post mit ID: 17qvewj
+2024-12-08 14:02:56,054 [WARNING] Verarbeite Post mit ID: 17qdt8p
+2024-12-08 14:03:04,661 [WARNING] Verarbeite Post mit ID: 17qezub
+2024-12-08 14:03:07,718 [WARNING] Verarbeite Post mit ID: 17qg254
+2024-12-08 14:03:12,594 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2023\12\reddit_2023_12_16.jsonl
+2024-12-08 14:03:12,594 [WARNING] Verarbeite Post mit ID: 18jp1as
+2024-12-08 14:03:15,937 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2024\01\reddit_2024_01_05.jsonl
+2024-12-08 14:03:15,938 [WARNING] Verarbeite Post mit ID: 18z3u24
+2024-12-08 14:03:24,213 [WARNING] Verarbeite Post mit ID: 18z5dzf
+2024-12-08 14:03:33,370 [WARNING] Verarbeite Post mit ID: 18z71op
+2024-12-08 14:03:37,683 [WARNING] Verarbeite Post mit ID: 18zgs0a
+2024-12-08 14:03:39,945 [WARNING] Verarbeite Post mit ID: 18yw6q8
+2024-12-08 14:03:45,621 [WARNING] Verarbeite Post mit ID: 18zhkdk
+2024-12-08 14:03:54,022 [WARNING] Verarbeite Post mit ID: 18yts5m
+2024-12-08 14:04:03,166 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2024\03\reddit_2024_03_09.jsonl
+2024-12-08 14:04:03,167 [WARNING] Verarbeite Post mit ID: 1baohvm
+2024-12-08 14:04:06,869 [WARNING] Verarbeite Post mit ID: 1ba7e3c
+2024-12-08 14:04:19,612 [WARNING] Verarbeite Post mit ID: 1ban3zn
+2024-12-08 14:04:22,766 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2024\03\reddit_2024_03_28.jsonl
+2024-12-08 14:04:22,767 [WARNING] Verarbeite Post mit ID: 1bpkis0
+2024-12-08 14:04:29,651 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2024\07\reddit_2024_07_21.jsonl
+2024-12-08 14:04:29,652 [WARNING] Verarbeite Post mit ID: 1e8q2qc
+2024-12-08 14:04:33,551 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2024\08\reddit_2024_08_10.jsonl
+2024-12-08 14:04:33,552 [WARNING] Verarbeite Post mit ID: 1eolp85
+2024-12-08 14:04:44,940 [WARNING] Verarbeite Post mit ID: 1eopk0h
+2024-12-08 14:04:47,513 [WARNING] Verarbeite Post mit ID: 1eor22w
+2024-12-08 14:04:53,140 [WARNING] Verarbeite Post mit ID: 1ep1s50
+2024-12-08 14:04:58,654 [WARNING] Verarbeite Post mit ID: 1ep3npr
+2024-12-08 14:05:05,561 [WARNING] Verarbeite Post mit ID: 1ep475v
+2024-12-08 14:05:08,273 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2024\10\reddit_2024_10_01.jsonl
+2024-12-08 14:05:08,274 [WARNING] Verarbeite Post mit ID: 1ftf8ia
+2024-12-08 14:05:12,961 [WARNING] Verarbeite Post mit ID: 1ftqqw0
+2024-12-08 14:05:16,948 [WARNING] Verarbeite Post mit ID: 1ftcze7
+2024-12-08 14:05:23,391 [WARNING] Verarbeite Post mit ID: 1ftmdkz
+2024-12-08 14:05:31,848 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2024\10\reddit_2024_10_08.jsonl
+2024-12-08 14:05:31,848 [WARNING] Verarbeite Post mit ID: 1fyr66m
+2024-12-08 14:05:37,805 [WARNING] Verarbeite Post mit ID: 1fz76rj
+2024-12-08 14:05:42,080 [WARNING] Verarbeite Post mit ID: 1fyoy19
+2024-12-08 14:05:47,250 [WARNING] Beginne mit der Verarbeitung der Datei: ../VM_Projects_Copy/100/input_data\2024\10\reddit_2024_10_14.jsonl
+2024-12-08 14:05:47,251 [WARNING] Verarbeite Post mit ID: 1g37o8p
+2024-12-08 14:05:51,180 [WARNING] Verarbeite Post mit ID: 1g3qa2q
+2024-12-08 14:05:56,052 [WARNING] Verarbeite Post mit ID: 1g3go6y
+2024-12-08 14:06:00,139 [WARNING] Verarbeite Post mit ID: 1g3pofm
+2024-12-08 14:06:04,598 [WARNING] Verarbeite Post mit ID: 1g3b8zi
+2024-12-08 14:06:10,703 [WARNING] Verarbeite Post mit ID: 1g35jtv
+2024-12-08 14:06:15,798 [WARNING] Verarbeite Post mit ID: 1g35nq5
+2024-12-08 14:06:21,346 [WARNING] Verarbeite Post mit ID: 1g3fd6b
+2024-12-08 14:06:24,398 [WARNING] Verarbeite Post mit ID: 1g3gizc
