@@ -117,7 +117,8 @@ def process_file(input_path, output_path, progress_file):
             post_id = post.get('id')
             if post_id in processed_ids:
                 continue
-            if 90 < post.get('num_comments') <= 175:
+                # 250 bis 350
+            if 250 < post.get('num_comments') <= 350:
                 processed_post = processor.process_post(post)
                 outfile.write(json.dumps(processed_post) + '\n')
                 processed_ids.add(post_id)
@@ -153,9 +154,9 @@ def process_directory(input_dir, output_dir, progress_dir):
 def main():
     preload_nltk_resources()
     for count in range(100, 251, 10):
-        input_directory = f'../VM_Projects_Copy/{count}/input_data'
-        output_directory = f'../VM_Projects_Copy/{count}/output_data'
-        progress_directory = f'../VM_Projects_Copy/{count}/progress_data'
+        input_directory = f'../VM_Projects/{count}/input_data'
+        output_directory = f'../VM_Projects/{count}/output_data'
+        progress_directory = f'../VM_Projects/{count}/progress_data'
 
         log_file_path = os.path.join(progress_directory, "processing.log")
         configure_logging(log_file_path)
