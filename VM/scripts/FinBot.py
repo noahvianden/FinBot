@@ -120,17 +120,17 @@ def process_file(input_path, output_path, progress_file):
             post_id = post.get('id')
             if post_id in processed_ids:
                 continue
+            if post.get('num_comments') <= 250:
+                processed_post = processor.process_post(post)
+                outfile.write(json.dumps(processed_post) + '\n')
+                processed_ids.add(post_id)
 
-            processed_post = processor.process_post(post)
-            outfile.write(json.dumps(processed_post) + '\n')
-            processed_ids.add(post_id)
-
-            # Fortschritt nicht unbedingt nach jedem Post speichern, ggf. nur gelegentlich
-            try:
-                with open(progress_file, 'w', encoding='utf-8') as pf:
-                    json.dump(list(processed_ids), pf)
-            except Exception as e:
-                logging.exception(f"Fehler beim Speichern des Fortschritts in {progress_file}: {e}")
+                # Fortschritt nicht unbedingt nach jedem Post speichern, ggf. nur gelegentlich
+                try:
+                    with open(progress_file, 'w', encoding='utf-8') as pf:
+                        json.dump(list(processed_ids), pf)
+                except Exception as e:
+                    logging.exception(f"Fehler beim Speichern des Fortschritts in {progress_file}: {e}")
 
 def process_directory(input_dir, output_dir, progress_dir):
     files_to_process = []
